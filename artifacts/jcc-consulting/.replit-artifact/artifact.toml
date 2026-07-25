@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "JCC Consulting"
+version = "1.0.0"
+id = "artifacts/jcc-consulting"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24076
+
+[services.development]
+run = "pnpm --filter @workspace/jcc-consulting run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/jcc-consulting", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/jcc-consulting/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24076"
+BASE_PATH = "/"
