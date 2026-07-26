@@ -6,3 +6,9 @@ id = "7RliD-1AKhUolewWa2Sv6"
 uri = "file://jcc-consulting-sitio.zip"
 type = "unspecified"
 title = "JCC Consulting — Sitio Web (ZIP)"
+
+[[outputs]]
+id = "EQBFdz1VVgLYHcaVFn6J_"
+uri = "file://artifacts/jcc-consulting/dist/public/index.html"
+type = "unspecified"
+title = "index.html — JCC Consulting"
