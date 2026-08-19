@@ -37,9 +37,10 @@ export function Chatbot() {
 
   return <div className="chatbot">
     {open && <div className="chat-window">
-      <div className="chat-header"><div><Bot size={18} /><span>Asistente JCC</span></div><button onClick={() => setOpen(false)} aria-label="Cerrar chat"><X size={17} /></button></div>
+      <div className="chat-header"><div className="chat-agent"><span className="chat-agent-icon"><Bot size={17} /></span><span><strong>Asistente JCC</strong><small>Responde en segundos</small></span></div><button onClick={() => setOpen(false)} aria-label="Cerrar chat"><X size={17} /></button></div>
       <div className="chat-messages">{messages.map((message, index) => <div className={`chat-message ${message.from}`} key={`${message.text}-${index}`}>{message.text}</div>)}</div>
-      <div className="chat-suggestion"><button onClick={() => setValue("¿Qué incluye el diagnóstico de 30 días?")}>Diagnóstico de 30 días</button><button onClick={() => setValue("¿Qué servicios ofrecen?")}>Servicios</button></div>
+      <p className="chat-prompt">Preguntas frecuentes</p>
+      <div className="chat-suggestion"><button onClick={() => setValue("¿Qué incluye el diagnóstico de 30 días?")}>Diagnóstico 30 días</button><button onClick={() => setValue("¿Qué servicios ofrecen?")}>Servicios</button><button onClick={() => setValue("¿Cómo ayudan con SAP?")}>SAP PMO</button></div>
       <form onSubmit={submit} className="chat-form"><input value={value} onChange={(event) => setValue(event.target.value)} placeholder="Escriba su consulta..." aria-label="Escriba su consulta" /><button type="submit" aria-label="Enviar"><Send size={16} /></button></form>
       <Link href="/contacto" className="chat-contact" onClick={() => setOpen(false)}>Agendar una conversación <span>→</span></Link>
     </div>}

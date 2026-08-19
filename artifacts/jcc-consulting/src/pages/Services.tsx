@@ -2,6 +2,7 @@ import { ArrowRight, BriefcaseBusiness, Calculator, Crosshair, TrendingUp } from
 import { Link } from "wouter";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "./Home";
+import mineralImage from "@assets/generated_images/jcc-mineral-detail.jpg";
 
 const groups = [
   { id: "estrategia", icon: Crosshair, number: "01", title: "Estrategia y finanzas corporativas", intro: "Alineamos las decisiones financieras con lo que realmente ocurre en la operación.", items: ["Planeamiento estratégico y Balanced Scorecard", "Planeamiento y control financiero", "Gestión de Working Capital, CAPEX y flujos de caja", "Valorización de empresas y M&A"] },
@@ -11,5 +12,5 @@ const groups = [
 ];
 
 export default function Services() {
-  return <div className="site-page"><Navbar /><main className="inner-page"><header className="page-header"><p className="eyebrow">Lo que hacemos</p><h1>Soluciones para cada decisión crítica de su operación.</h1><p>Desde el presupuesto hasta la valorización de un proyecto, ayudamos a que la cadena de valor minera funcione como una sola empresa.</p></header><section className="service-list">{groups.map(({id, icon: Icon, number, title, intro, items}) => <article id={id} className="service-row" key={id}><div className="service-number">{number}</div><Icon size={34} strokeWidth={1.3} /><div><h2>{title}</h2><p className="service-intro">{intro}</p><ul>{items.map(item => <li key={item}>{item}</li>)}</ul></div><ArrowRight className="service-arrow" /></article>)}</section><div className="page-cta"><h2>¿Tiene un desafío específico?</h2><Link href="/contacto" className="button button-dark">Conversemos <ArrowRight size={17} /></Link></div></main><Footer /></div>;
+  return <div className="site-page"><Navbar /><main className="inner-page"><header className="page-header"><p className="eyebrow">Lo que hacemos</p><h1>Soluciones para cada decisión crítica de su operación.</h1><p>Desde el presupuesto hasta la valorización de un proyecto, ayudamos a que la cadena de valor minera funcione como una sola empresa.</p></header><section className="service-visual"><img src={mineralImage} alt="Muestras de mineral y análisis de valor comercial" /><div><p className="eyebrow">Gestión minera integrada</p><h2>Una brecha, un driver, un responsable y un impacto en dólares.</h2></div></section><section className="service-list">{groups.map(({id, icon: Icon, number, title, intro, items}) => <article id={id} className="service-row" key={id}><div className="service-number">{number}</div><Icon size={34} strokeWidth={1.3} /><div><h2>{title}</h2><p className="service-intro">{intro}</p><ul>{items.map(item => <li key={item}>{item}</li>)}</ul></div><ArrowRight className="service-arrow" /></article>)}</section><div className="page-cta"><h2>¿Tiene un desafío específico?</h2><Link href="/contacto" className="button button-dark">Conversemos <ArrowRight size={17} /></Link></div></main><Footer /></div>;
 }
