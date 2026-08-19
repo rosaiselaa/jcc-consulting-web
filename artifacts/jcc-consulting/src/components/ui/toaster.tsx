@@ -1,7 +1,7 @@
 import * as React from "react"
 import { ToastProvider, ToastViewport } from "@radix-ui/react-toast"
 import { useToast } from "@/hooks/use-toast"
-import { Toast, ToastClose, ToastDescription, ToastProviderProps, ToastTitle } from "@/components/ui/toast"
+import { Toast, ToastClose, ToastDescription, ToastTitle } from "@/components/ui/toast"
 
 export function Toaster() {
   const { toasts } = useToast()

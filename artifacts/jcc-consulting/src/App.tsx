@@ -8,6 +8,7 @@ import Services from '@/pages/Services';
 import Technology from '@/pages/Technology';
 import Leadership from '@/pages/Leadership';
 import Contact from '@/pages/Contact';
+import { Chatbot } from '@/components/Chatbot';
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ function App() {
           <Router />
         </WouterRouter>
         <Toaster />
+        <Chatbot />
       </TooltipProvider>
     </QueryClientProvider>
   );
