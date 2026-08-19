@@ -363,6 +363,44 @@ body { background: #f7f6f2; color: #171717; }
   .leader-image > div { padding: 95px 28px; }
 }
 
+/* JCC green and white identity */
+:root {
+  --primary: 153 58% 30%;
+  --primary-foreground: 0 0% 100%;
+  --ring: 153 58% 30%;
+}
+.eyebrow, .service-number, .service-arrow, .contact-details svg, .leader-facts svg { color: #1f7654; }
+.eyebrow.light, .home-hero .eyebrow.light { color: #2a956b; }
+.nav-link.active::after { background: #1f7654; }
+.nav-cta, .chat-toggle { background: #1f7654; }
+.nav-cta:hover, .chat-toggle:hover { background: #15583f; }
+.button-light, .button-dark { background: #1f7654; color: white; }
+.button-light:hover, .button-dark:hover { background: #15583f; }
+.text-link { border-color: #1f7654; }
+.feature-card.orange, .tech-panels .orange-panel { background: #dceee5; color: #163c2d; }
+.feature-card.orange p, .tech-panels .orange-panel > p:not(.eyebrow), .tech-panels .orange-panel li { color: #426d5b; }
+.feature-card.dark { background: #1f7654; color: white; }
+.leader-mark { background: #1f7654; }
+.card-line { background: #1f7654; }
+.tool-icon.orange { color: #1f7654; background: #e2f2ea; }
+.tool-icon.gold { color: #5e8c30; background: #edf4dd; }
+.tool-icon.blue { color: #327b9a; background: #e2f0f4; }
+.tool-icon.green, .tool-icon.cyan { color: #1f7654; background: #e2f2ea; }
+.tool-icon.violet { color: #637b45; background: #eef2e3; }
+.transformation-section { background: #edf7f1; }
+.transformation-card { background: white; border-color: #cfe2d7; }
+.quote-block { background: #dceee5; }
+.quote-block span { color: #1f7654; }
+.site-footer { background: white; color: #52675d; border-top: 1px solid #d2e3d8; }
+.footer-brand { color: #173b2d; }
+.footer-brand span { color: #1f7654; }
+.chat-header { background: #edf7f1; }
+.chat-agent-icon { background: #1f7654; }
+.chat-message.user { background: #1f7654; }
+.chat-contact { background: #edf7f1; }
+.chat-contact span, .chat-form button { color: #1f7654; }
+.premium-tech-section .eyebrow { color: #1f7654; }
+
 /* Light premium direction */
 .home-hero { min-height: 720px; align-items: stretch; background: #f7f6f2; }
 .home-hero .hero-image { left: 49%; right: 0; background-position: center; }
