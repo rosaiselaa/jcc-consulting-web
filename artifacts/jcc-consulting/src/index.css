@@ -263,6 +263,32 @@ body { background: #f7f6f2; color: #171717; }
 .reference-strip h2 { max-width: 480px; margin: 18px 0; font-family: var(--app-font-display); font-size: 2.5rem; line-height: 1.02; letter-spacing: -.05em; font-weight: 500; }
 .reference-strip p:not(.eyebrow) { max-width: 470px; color: #666159; line-height: 1.65; }
 .reference-strip img { width: 100%; max-height: 340px; object-fit: cover; border: 1px solid #d5d0c6; box-shadow: 14px 14px 0 #e8e5dd; }
+.premium-tech-section { max-width: 1120px; margin: 0 auto; padding: 95px 7vw; }
+.premium-section-heading { display: grid; grid-template-columns: 1.15fr .85fr; gap: 80px; align-items: end; margin-bottom: 48px; }
+.premium-section-heading h2 { max-width: 650px; margin-top: 16px; font-family: var(--app-font-display); font-size: clamp(2.2rem, 4vw, 4rem); line-height: 1; letter-spacing: -.06em; font-weight: 500; }
+.premium-section-heading > p { max-width: 420px; color: #666159; line-height: 1.65; padding-bottom: 3px; }
+.tool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.tool-card, .transformation-card { position: relative; min-height: 235px; padding: 28px; overflow: hidden; border: 1px solid #282b33; background: #111319; color: white; transition: transform .25s, border-color .25s, box-shadow .25s; }
+.tool-card:hover, .transformation-card:hover { transform: translateY(-5px); border-color: rgba(217,120,78,.65); box-shadow: 0 18px 35px rgba(20,20,20,.14); }
+.tool-card h3, .transformation-card h3 { margin: 27px 0 12px; font-family: var(--app-font-display); font-size: 1.08rem; letter-spacing: -.02em; font-weight: 500; }
+.tool-card p, .transformation-card p { color: #9296a3; font-size: .8rem; line-height: 1.6; }
+.tool-icon { display: grid; width: 39px; height: 39px; place-items: center; background: rgba(255,255,255,.08); }
+.tool-icon.blue { color: #5ca9ff; background: rgba(55,132,221,.15); }
+.tool-icon.gold { color: #f3c85b; background: rgba(209,156,35,.16); }
+.tool-icon.green { color: #42d7a1; background: rgba(18,170,119,.15); }
+.tool-icon.orange { color: #ff9a45; background: rgba(225,103,26,.15); }
+.tool-icon.cyan { color: #42c9f3; background: rgba(28,157,211,.15); }
+.tool-icon.violet { color: #d38dff; background: rgba(146,71,191,.15); }
+.card-line { position: absolute; left: 28px; bottom: 0; width: 45px; height: 2px; background: #d9784e; opacity: .7; }
+.transformation-section { max-width: none; background: #0d0f14; color: white; }
+.transformation-section .premium-section-heading { max-width: 1120px; margin-left: auto; margin-right: auto; }
+.transformation-section .premium-section-heading > p { color: #9398a6; }
+.transformation-grid { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.transformation-card { min-height: 245px; background: #141720; border-color: #252a37; }
+.transformation-top { display: flex; align-items: center; justify-content: space-between; }
+.transformation-top span { color: #858b99; font-family: monospace; font-size: .57rem; letter-spacing: .12em; border: 1px solid #2b3040; padding: 5px 7px; }
+.transformation-card h3 { font-size: 1.02rem; }
+.transformation-card p { color: #8e93a1; }
 .chatbot { position: fixed; z-index: 80; right: 24px; bottom: 24px; font-size: .84rem; }
 .chat-toggle { display: inline-flex; align-items: center; gap: 10px; border: 0; background: #c85a31; color: white; padding: 14px 17px; box-shadow: 0 8px 30px rgba(0,0,0,.18); cursor: pointer; transition: background .2s, transform .2s; }
 .chat-toggle:hover { background: #a94825; transform: translateY(-2px); }
@@ -305,5 +331,9 @@ body { background: #f7f6f2; color: #171717; }
   .site-footer { flex-direction: column; padding: 35px 24px; }
   .reference-strip { grid-template-columns: 1fr; gap: 32px; padding: 0 24px 65px; }
   .reference-strip h2 { font-size: 2rem; }
+  .premium-tech-section { padding: 70px 24px; }
+  .premium-section-heading { grid-template-columns: 1fr; gap: 22px; }
+  .premium-section-heading h2 { font-size: 2.45rem; }
+  .tool-grid, .transformation-grid { grid-template-columns: 1fr; }
   .chatbot { right: 14px; bottom: 14px; }
 }
