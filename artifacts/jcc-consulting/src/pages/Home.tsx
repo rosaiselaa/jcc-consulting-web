@@ -1,7 +1,6 @@
 import { ArrowRight, BarChart3, Factory, Layers3 } from "lucide-react";
 import { Link } from "wouter";
 import { Navbar } from "@/components/sections/Navbar";
-import heroImage from "@assets/generated_images/jcc-mine-hero.jpg";
 import controlRoomImage from "@assets/generated_images/jcc-control-room.jpg";
 import brightHeroImage from "@assets/generated_images/jcc-bright-mine-hero.jpg";
 

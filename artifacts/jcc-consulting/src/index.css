@@ -419,6 +419,8 @@ body { background: #f7f6f2; color: #171717; }
 .detail-next { display: flex; align-items: center; justify-content: space-between; gap: 35px; padding: 75px 7vw; background: #e7f1eb; }
 .detail-next > div { max-width: 700px; }
 .detail-next h2 { margin-top: 14px; font-family: var(--app-font-display); font-size: clamp(2rem, 3.5vw, 3.3rem); line-height: 1.03; letter-spacing: -.055em; font-weight: 500; }
+.detail-next-link { display: inline-flex; align-items: center; gap: 10px; flex: none; color: #1f7654; font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.detail-next-link:hover { color: #15583f; }
 @media (max-width: 760px) {
   .detail-hero, .detail-body { grid-template-columns: 1fr; gap: 38px; }
   .detail-hero { padding: 65px 24px 70px; }
