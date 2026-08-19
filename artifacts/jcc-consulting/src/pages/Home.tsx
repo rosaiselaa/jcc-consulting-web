@@ -3,13 +3,14 @@ import { Link } from "wouter";
 import { Navbar } from "@/components/sections/Navbar";
 import heroImage from "@assets/generated_images/jcc-mine-hero.jpg";
 import controlRoomImage from "@assets/generated_images/jcc-control-room.jpg";
+import brightHeroImage from "@assets/generated_images/jcc-bright-mine-hero.jpg";
 
 export default function Home() {
   return <div className="site-page">
     <Navbar />
     <main>
       <section className="home-hero">
-        <div className="hero-image" style={{ backgroundImage: `linear-gradient(90deg, rgba(12,13,15,.9), rgba(12,13,15,.3)), url(${heroImage})` }} />
+        <div className="hero-image" style={{ backgroundImage: `linear-gradient(90deg, rgba(255,255,255,.94), rgba(255,255,255,.1)), url(${brightHeroImage})` }} />
         <div className="hero-content">
           <p className="eyebrow light">Consultoría estratégica minera</p>
           <h1>La ventaja competitiva empieza con una mejor decisión.</h1>
