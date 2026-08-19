@@ -1,13 +1,15 @@
 import { ArrowRight, BarChart3, Factory, Layers3 } from "lucide-react";
 import { Link } from "wouter";
 import { Navbar } from "@/components/sections/Navbar";
+import heroImage from "@assets/generated_images/jcc-mine-hero.jpg";
+import controlRoomImage from "@assets/generated_images/jcc-control-room.jpg";
 
 export default function Home() {
   return <div className="site-page">
     <Navbar />
     <main>
       <section className="home-hero">
-        <div className="hero-image" />
+        <div className="hero-image" style={{ backgroundImage: `linear-gradient(90deg, rgba(12,13,15,.9), rgba(12,13,15,.3)), url(${heroImage})` }} />
         <div className="hero-content">
           <p className="eyebrow light">Consultoría estratégica minera</p>
           <h1>La ventaja competitiva empieza con una mejor decisión.</h1>
@@ -25,6 +27,15 @@ export default function Home() {
           <p>Las empresas mineras que toman mejores decisiones operativas y financieras tienen algo en común: una visión conectada del negocio.</p>
           <p>JCC Consulting integra experiencia de terreno, control de gestión y transformación tecnológica para que esa visión sea posible.</p>
           <Link href="/liderazgo" className="text-link">Conozca JCC Consulting <ArrowRight size={16} /></Link>
+        </div>
+      </section>
+      <section className="editorial-image-section">
+        <div className="editorial-image" style={{ backgroundImage: `url(${controlRoomImage})` }} />
+        <div className="editorial-overlay">
+          <p className="eyebrow light">De los datos a la decisión</p>
+          <h2>Una lectura conectada de la operación.</h2>
+          <p>Integramos procesos, datos y automatización para que la dirección vea antes lo que está cambiando en el negocio.</p>
+          <Link href="/tecnologia" className="button button-light">Ver transformación digital <ArrowRight size={17} /></Link>
         </div>
       </section>
       <section className="feature-grid">
