@@ -1,18 +1,11 @@
 import { useState, useEffect } from "react";
-import { Link } from "wouter";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-
-const NAV_LINKS = [
-  { label: "El Problema", href: "#problema" },
-  { label: "Soluciones", href: "#soluciones" },
-  { label: "Tecnología", href: "#tecnologia" },
-  { label: "Liderazgo", href: "#liderazgo" },
-];
+import { Link, useLocation } from "wouter";
+import { ChevronDown, Menu, X } from "lucide-react";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,42 +21,35 @@ export function Navbar() {
   };
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/90 backdrop-blur-md border-b border-border py-4"
-          : "bg-transparent py-6"
-      }`}
-    >
-      <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled ? "bg-[#f7f6f2]/95 shadow-sm backdrop-blur-md" : "bg-[#f7f6f2]"
+    }`}>
+      <div className="mx-auto flex h-[76px] max-w-[1380px] items-center justify-between px-6 lg:px-10">
         <Link href="/">
-          <div className="font-display font-bold text-2xl tracking-tight text-white cursor-pointer select-none">
-            JCC <span className="text-primary">Consulting</span>
+          <div className="cursor-pointer text-[22px] font-bold tracking-[-0.04em] text-[#171717]">
+            JCC<span className="text-[#c85a31]">.</span>
           </div>
         </Link>
-
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
-          <ul className="flex items-center gap-8">
-            {NAV_LINKS.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="text-sm font-medium text-muted-foreground hover:text-white transition-colors"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <Button onClick={scrollToContact} className="font-semibold tracking-wide">
-            Contáctenos
-          </Button>
+        <div className="hidden items-center gap-9 md:flex">
+          <Link href="/" className={`nav-link ${location === "/" ? "active" : ""}`}>Inicio</Link>
+          <div className="group relative">
+            <Link href="/servicios" className={`nav-link inline-flex items-center gap-1 ${location.startsWith("/servicios") ? "active" : ""}`}>
+              Servicios <ChevronDown size={14} />
+            </Link>
+            <div className="invisible absolute left-0 top-8 w-64 translate-y-2 border border-[#ddd9d0] bg-[#f7f6f2] p-3 opacity-0 shadow-xl transition-all group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+              <Link href="/servicios#estrategia" className="menu-link">Estrategia y finanzas</Link>
+              <Link href="/servicios#costos" className="menu-link">Costos y operación</Link>
+              <Link href="/servicios#proyectos" className="menu-link">Proyectos y gestión comercial</Link>
+            </div>
+          </div>
+          <Link href="/tecnologia" className={`nav-link ${location === "/tecnologia" ? "active" : ""}`}>Tecnología</Link>
+          <Link href="/liderazgo" className={`nav-link ${location === "/liderazgo" ? "active" : ""}`}>Liderazgo</Link>
+          <Link href="/contacto" className="nav-cta">Hablemos</Link>
         </div>
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white"
+          className="text-[#171717] md:hidden"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -72,21 +58,17 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-background border-b border-border md:hidden">
-          <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-lg font-medium text-muted-foreground hover:text-white py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.label}
-              </a>
+        <div className="absolute left-0 right-0 top-full border-b border-[#ddd9d0] bg-[#f7f6f2] md:hidden">
+          <div className="flex flex-col gap-1 px-6 py-5">
+            {[
+              ["/", "Inicio"],
+              ["/servicios", "Servicios"],
+              ["/tecnologia", "Tecnología"],
+              ["/liderazgo", "Liderazgo"],
+              ["/contacto", "Contacto"],
+            ].map(([href, label]) => (
+              <Link key={href} href={href} className="mobile-link" onClick={() => setIsMobileMenuOpen(false)}>{label}</Link>
             ))}
-            <Button onClick={scrollToContact} className="w-full mt-2 font-semibold">
-              Contáctenos
-            </Button>
           </div>
         </div>
       )}
