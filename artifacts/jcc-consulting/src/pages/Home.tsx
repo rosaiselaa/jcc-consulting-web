@@ -18,9 +18,6 @@ export default function Home() {
     <main>
       <section className="home-hero">
         <div className="hero-image" style={{ backgroundImage: `linear-gradient(180deg, rgba(13,34,25,.18), rgba(13,34,25,.68)), url(${brightHeroImage})` }} />
-        <video className="hero-video" autoPlay muted loop playsInline poster={brightHeroImage} aria-hidden="true">
-          <source src={`${import.meta.env.BASE_URL}videos/jcc-consulting-hero-loop.mp4`} type="video/mp4" />
-        </video>
         <div className="hero-content">
           <p className="eyebrow hero-welcome">Bienvenidos a JCC Consulting</p>
           <h1>Decisiones que mueven la operación.</h1>
