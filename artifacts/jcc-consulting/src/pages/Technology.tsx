@@ -8,18 +8,13 @@ import powerBiToolImage from "@assets/generated_images/jcc-tool-power-bi.jpg";
 import excelToolImage from "@assets/generated_images/jcc-tool-excel.jpg";
 import projectToolImage from "@assets/generated_images/jcc-tool-project.jpg";
 import cloudToolImage from "@assets/generated_images/jcc-tool-cloud.jpg";
-import sapToolIcon from "@assets/generated_images/jcc-icon-sap-erp.png";
-import powerBiToolIcon from "@assets/generated_images/jcc-icon-power-bi.png";
-import excelToolIcon from "@assets/generated_images/jcc-icon-excel.png";
-import projectToolIcon from "@assets/generated_images/jcc-icon-project.png";
-import cloudToolIcon from "@assets/generated_images/jcc-icon-cloud.png";
 
 const corporateTools = [
-  { icon: Database, iconImage: sapToolIcon, accent: "blue", image: sapToolImage, slug: "sap-pmo", title: "SAP ERP", text: "Integración centralizada de los flujos de operaciones, logística y finanzas en una sola fuente de verdad corporativa." },
-  { icon: BarChart3, iconImage: powerBiToolIcon, accent: "gold", image: powerBiToolImage, slug: "power-bi", title: "Power BI & Business Intelligence", text: "Dashboards ejecutivos con KPIs analíticos en tiempo real para la toma de decisiones gerenciales." },
-  { icon: FileSpreadsheet, iconImage: excelToolIcon, accent: "green", image: excelToolImage, slug: "excel-modelamiento", title: "Excel Avanzado & Modelamiento", text: "Modelos financieros complejos, control presupuestario y proyecciones de Budget & Forecast." },
-  { icon: Calculator, iconImage: projectToolIcon, accent: "orange", image: projectToolImage, slug: "project-primavera", title: "MS Project & Primavera P6", text: "Cronogramas maestros, análisis de ruta crítica y control estricto de proyectos industriales." },
-  { icon: Cloud, iconImage: cloudToolIcon, accent: "cyan", image: cloudToolImage, slug: "cloud-gobernanza", title: "Integración Cloud & Gobernanza", text: "Sincronización segura de datos entre campo y oficina central, garantizando disponibilidad y cumplimiento." },
+  { icon: Database, accent: "blue", image: sapToolImage, slug: "sap-pmo", title: "SAP ERP", text: "Integración centralizada de los flujos de operaciones, logística y finanzas en una sola fuente de verdad corporativa." },
+  { icon: BarChart3, accent: "gold", image: powerBiToolImage, slug: "power-bi", title: "Power BI & Business Intelligence", text: "Dashboards ejecutivos con KPIs analíticos en tiempo real para la toma de decisiones gerenciales." },
+  { icon: FileSpreadsheet, accent: "green", image: excelToolImage, slug: "excel-modelamiento", title: "Excel Avanzado & Modelamiento", text: "Modelos financieros complejos, control presupuestario y proyecciones de Budget & Forecast." },
+  { icon: Calculator, accent: "orange", image: projectToolImage, slug: "project-primavera", title: "MS Project & Primavera P6", text: "Cronogramas maestros, análisis de ruta crítica y control estricto de proyectos industriales." },
+  { icon: Cloud, accent: "cyan", image: cloudToolImage, slug: "cloud-gobernanza", title: "Integración Cloud & Gobernanza", text: "Sincronización segura de datos entre campo y oficina central, garantizando disponibilidad y cumplimiento." },
 ];
 
 const transformationSteps = [
