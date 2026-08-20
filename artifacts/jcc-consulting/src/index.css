@@ -510,9 +510,9 @@ body { background: #f7f6f2; color: #171717; }
 .chat-form input { color: #171717; }
 
 @media (max-width: 760px) {
-  .home-hero { min-height: 800px; display: flex; flex-direction: column; }
-  .home-hero .hero-image { position: relative; inset: auto; order: -1; width: 100%; height: 300px; }
-  .home-hero .hero-content { width: 100%; padding: 55px 24px 70px; }
+  .home-hero { min-height: 760px; display: flex; flex-direction: column; justify-content: center; }
+  .home-hero .hero-image { position: absolute; inset: -2.5%; order: initial; width: auto; height: auto; background-position: center bottom; }
+  .home-hero .hero-content { width: 100%; padding: 175px 24px 115px; }
   .home-hero .hero-content h1 { font-size: 2.7rem; }
   .home-hero .hero-index { bottom: 22px; right: 24px; }
   .register-page { grid-template-columns: 1fr; gap: 45px; padding: 125px 24px 75px; }
