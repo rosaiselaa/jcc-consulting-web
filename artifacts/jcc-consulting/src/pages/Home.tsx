@@ -46,11 +46,20 @@ export default function Home() {
           <p>Conectamos producción, costos, valor comercial, proyectos, EBITDA y caja para actuar antes y capturar valor.</p>
         </div>
         <div className="value-chain" aria-label="Cadena de valor JCC Consulting">
+          <div className="value-chain-axis" aria-hidden="true">
+            <span>LECTURA INTEGRAL</span>
+            <i />
+          </div>
           {valueStages.map((stage, index) => <div className="value-stage" key={stage.number}>
-            <span className="value-stage-number">{stage.number}</span>
-            <h3>{stage.title}</h3>
-            <p>{stage.text}</p>
-            {index < valueStages.length - 1 && <ArrowRight className="value-stage-arrow" size={18} />}
+            <div className="value-stage-topline">
+              <span className="value-stage-number">{stage.number}</span>
+              <span className="value-stage-index">PILAR {index + 1} / 05</span>
+            </div>
+            <div className="value-stage-content">
+              <h3>{stage.title}</h3>
+              <p>{stage.text}</p>
+            </div>
+            {index < valueStages.length - 1 && <div className="value-stage-connector" aria-hidden="true"><span /><ArrowRight className="value-stage-arrow" size={16} /></div>}
           </div>)}
         </div>
         <div className="value-model-footer"><span>Datos</span><span>Brecha</span><span>Driver</span><span>Decisión</span><span>Acción</span><strong>Valor capturado</strong></div>
