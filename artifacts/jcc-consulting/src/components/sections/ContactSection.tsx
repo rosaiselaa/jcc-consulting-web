@@ -44,16 +44,24 @@ export function ContactSection() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
-    // Simulate form submission
-    setTimeout(() => {
-      console.log(values);
-      toast({
-        title: "Mensaje Enviado",
-        description: "Nos pondremos en contacto con usted a la brevedad.",
-      });
-      form.reset();
-      setIsSubmitting(false);
-    }, 1500);
+    const whatsappMessage = [
+      "Hola JCC Consulting, quiero solicitar información.",
+      "",
+      `Nombre: ${values.nombre}`,
+      `Empresa: ${values.empresa}`,
+      `Cargo: ${values.cargo}`,
+      `Correo: ${values.email}`,
+      `Teléfono: ${values.telefono}`,
+      `Mensaje: ${values.mensaje}`,
+    ].join("\n");
+    const whatsappUrl = `https://wa.me/51984607523?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    toast({
+      title: "WhatsApp abierto",
+      description: "Revisa el mensaje y pulsa Enviar en WhatsApp.",
+    });
+    form.reset();
+    setIsSubmitting(false);
   }
 
   return (
