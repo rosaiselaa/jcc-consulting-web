@@ -26,8 +26,8 @@ export function Navbar() {
     }`}>
       <div className="mx-auto flex h-[76px] max-w-[1380px] items-center justify-between px-6 lg:px-10">
         <Link href="/">
-          <div className="cursor-pointer text-[22px] font-bold tracking-[-0.04em] text-[#171717]">
-            JCC<span className="text-[#c85a31]">.</span>
+          <div className="cursor-pointer whitespace-nowrap text-[25px] font-bold tracking-[-0.055em] text-[#171717]">
+            JCC Consulting<span className="text-[#c85a31]">.</span>
           </div>
         </Link>
         <div className="hidden items-center gap-9 md:flex">
