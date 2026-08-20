@@ -379,6 +379,7 @@ body { background: #f7f6f2; color: #171717; }
 .text-link { border-color: #1f7654; }
 .feature-card.orange, .tech-panels .orange-panel { background: #dceee5; color: #163c2d; }
 .feature-card.orange p, .tech-panels .orange-panel > p:not(.eyebrow), .tech-panels .orange-panel li { color: #426d5b; }
+.tech-panels .orange-panel .eyebrow.text-ring { color: #1f7654; }
 .feature-card.dark { background: #1f7654; color: white; }
 .leader-mark { background: #1f7654; }
 .card-line { background: #1f7654; }
