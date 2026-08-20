@@ -191,10 +191,10 @@ body { background: #f7f6f2; color: #171717; }
 .menu-link:hover, .mobile-link:hover { background: #ebe8e1; color: #171717; }
 .mobile-link { font-size: 1.05rem; border-bottom: 1px solid #e1ded7; padding: 14px 0; }
 .home-hero { position: relative; min-height: 720px; display: flex; align-items: flex-end; overflow: hidden; background: #1a1b1d; }
-.hero-image { position: absolute; inset: -2.5%; z-index: 0; background-position: center; background-size: cover; animation: hero-slow-zoom 18s ease-in-out infinite alternate; transform-origin: center center; will-change: transform; }
+.hero-image { position: absolute; inset: -2.5%; z-index: 0; background-position: center; background-size: cover; animation: hero-slow-zoom 8s ease-in-out infinite alternate; transform-origin: center center; will-change: transform; }
 @keyframes hero-slow-zoom {
   from { transform: scale(1); }
-  to { transform: scale(1.045); }
+  to { transform: scale(1.06); }
 }
 .hero-content { position: relative; z-index: 2; width: min(1050px, 100%); margin: auto; padding: 190px 7vw 125px; color: white; text-align: center; }
 .hero-content h1 { max-width: 1000px; margin: 22px auto 24px; font-family: var(--app-font-display); font-size: clamp(3.8rem, 7vw, 6.2rem); line-height: .9; letter-spacing: -.065em; font-weight: 600; }
