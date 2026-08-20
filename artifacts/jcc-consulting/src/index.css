@@ -547,6 +547,16 @@ body { background: #f7f6f2; color: #171717; }
 .chat-header button { color: #171717; }
 .chat-message.bot { background: #f0ede7; color: #3b3934; }
 .chat-form input { color: #171717; }
+.tool-grid { display: flex; gap: 16px; overflow-x: auto; padding: 5px 2px 22px; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #1f7654 #e7eee9; }
+.tool-grid .tool-card { flex: 0 0 calc((100% - 32px) / 3); scroll-snap-align: start; }
+.tool-card-content .tool-icon img { width: 30px; height: 30px; object-fit: contain; }
+.tool-grid::-webkit-scrollbar { height: 6px; }
+.tool-grid::-webkit-scrollbar-track { background: #e7eee9; }
+.tool-grid::-webkit-scrollbar-thumb { background: #1f7654; border-radius: 20px; }
+@media (max-width: 760px) {
+  .tool-grid { gap: 14px; padding-bottom: 18px; }
+  .tool-grid .tool-card { flex-basis: 86%; }
+}
 
 @media (max-width: 760px) {
   .home-hero { min-height: 760px; display: flex; flex-direction: column; justify-content: center; }
