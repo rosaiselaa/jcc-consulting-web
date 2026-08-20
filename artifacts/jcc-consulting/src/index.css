@@ -422,6 +422,25 @@ body { background: #f7f6f2; color: #171717; }
 .detail-next h2 { margin-top: 14px; font-family: var(--app-font-display); font-size: clamp(2rem, 3.5vw, 3.3rem); line-height: 1.03; letter-spacing: -.055em; font-weight: 500; }
 .detail-next-link { display: inline-flex; align-items: center; gap: 10px; flex: none; color: #1f7654; font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
 .detail-next-link:hover { color: #15583f; }
+.register-page { max-width: 1200px; margin: 0 auto; padding: 165px 7vw 110px; display: grid; grid-template-columns: 1fr .78fr; gap: 90px; align-items: center; }
+.register-intro h1 { max-width: 700px; margin: 18px 0 26px; font-family: var(--app-font-display); font-size: clamp(3rem, 5.5vw, 6rem); line-height: .96; letter-spacing: -.065em; font-weight: 500; }
+.register-intro > p:not(.eyebrow) { max-width: 530px; color: #5f5b54; font-size: 1.1rem; line-height: 1.65; }
+.register-signals { display: flex; flex-wrap: wrap; gap: 18px 28px; margin-top: 38px; color: #426d5b; font-size: .8rem; }
+.register-signals span { display: inline-flex; align-items: center; gap: 8px; }
+.register-signals svg { color: #1f7654; }
+.register-card { padding: 42px; background: #e7f1eb; border: 1px solid #cfe2d7; }
+.register-card form { display: grid; gap: 18px; }
+.register-card h2 { margin: 10px 0 12px; font-family: var(--app-font-display); font-size: 2rem; line-height: 1.04; letter-spacing: -.045em; font-weight: 500; }
+.register-card label { display: grid; gap: 7px; color: #426d5b; font-size: .75rem; font-weight: 700; letter-spacing: .03em; }
+.register-card input, .register-card select { width: 100%; border: 1px solid #bfd7ca; background: #fff; color: #171717; padding: 13px 14px; outline: none; font: inherit; font-size: .9rem; font-weight: 400; }
+.register-card input:focus, .register-card select:focus { border-color: #1f7654; box-shadow: 0 0 0 3px rgba(31,118,84,.12); }
+.register-submit { width: 100%; justify-content: center; margin-top: 8px; border: 0; cursor: pointer; }
+.register-success { min-height: 400px; display: flex; flex-direction: column; justify-content: center; }
+.register-success-icon { display: grid; width: 46px; height: 46px; margin-bottom: 22px; place-items: center; border-radius: 50%; background: #1f7654; color: white; }
+.register-success h2 { font-size: 2.7rem; margin-top: 14px; }
+.register-success > p:not(.eyebrow) { color: #426d5b; line-height: 1.65; }
+.register-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-top: 28px; }
+.register-reset { margin-top: 0; border: 0; background: transparent; cursor: pointer; font: inherit; }
 @media (max-width: 760px) {
   .detail-hero, .detail-body { grid-template-columns: 1fr; gap: 38px; }
   .detail-hero { padding: 65px 24px 70px; }
@@ -470,4 +489,7 @@ body { background: #f7f6f2; color: #171717; }
   .home-hero .hero-content { width: 100%; padding: 55px 24px 70px; }
   .home-hero .hero-content h1 { font-size: 3.1rem; }
   .home-hero .hero-index { bottom: 22px; right: 24px; }
+  .register-page { grid-template-columns: 1fr; gap: 45px; padding: 125px 24px 75px; }
+  .register-intro h1 { font-size: 3.25rem; }
+  .register-card { padding: 28px 22px; }
 }

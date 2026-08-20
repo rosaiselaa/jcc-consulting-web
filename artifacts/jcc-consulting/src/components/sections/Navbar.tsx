@@ -44,6 +44,7 @@ export function Navbar() {
           </div>
           <Link href="/tecnologia" className={`nav-link ${location === "/tecnologia" ? "active" : ""}`}>Tecnología</Link>
           <Link href="/liderazgo" className={`nav-link ${location === "/liderazgo" ? "active" : ""}`}>Liderazgo</Link>
+          <Link href="/registro" className={`nav-link ${location === "/registro" ? "active" : ""}`}>Registro ejecutivo</Link>
           <Link href="/contacto" className="nav-cta">Hablemos</Link>
         </div>
 
@@ -65,6 +66,7 @@ export function Navbar() {
               ["/servicios", "Servicios"],
               ["/tecnologia", "Tecnología"],
               ["/liderazgo", "Liderazgo"],
+              ["/registro", "Registro ejecutivo"],
               ["/contacto", "Contacto"],
             ].map(([href, label]) => (
               <Link key={href} href={href} className="mobile-link" onClick={() => setIsMobileMenuOpen(false)}>{label}</Link>

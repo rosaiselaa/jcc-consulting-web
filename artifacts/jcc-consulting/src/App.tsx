@@ -8,6 +8,7 @@ import Services from '@/pages/Services';
 import Technology from '@/pages/Technology';
 import Leadership from '@/pages/Leadership';
 import Contact from '@/pages/Contact';
+import Register from '@/pages/Register';
 import { Chatbot } from '@/components/Chatbot';
 import DetailPage from '@/pages/DetailPage';
 
@@ -21,6 +22,7 @@ function Router() {
       <Route path="/tecnologia" component={Technology} />
       <Route path="/liderazgo" component={Leadership} />
       <Route path="/contacto" component={Contact} />
+      <Route path="/registro" component={Register} />
       <Route path="/detalle/:slug" component={DetailPage} />
       <Route component={NotFound} />
     </Switch>
