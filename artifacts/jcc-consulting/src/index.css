@@ -191,7 +191,7 @@ body { background: #f7f6f2; color: #171717; }
 .menu-link:hover, .mobile-link:hover { background: #ebe8e1; color: #171717; }
 .mobile-link { font-size: 1.05rem; border-bottom: 1px solid #e1ded7; padding: 14px 0; }
 .home-hero { position: relative; min-height: 720px; display: flex; align-items: flex-end; overflow: hidden; background: #1a1b1d; }
-.hero-image { position: absolute; inset: -2.5%; z-index: 0; background-position: center; background-size: cover; animation: hero-slow-zoom 8s ease-in-out infinite alternate; transform-origin: center center; will-change: transform; }
+.hero-image { position: absolute; inset: -2.5%; z-index: 0; background-position: center bottom; background-size: cover; animation: hero-slow-zoom 8s ease-in-out infinite alternate; transform-origin: 72% 88%; will-change: transform; }
 @keyframes hero-slow-zoom {
   from { transform: scale(1); }
   to { transform: scale(1.06); }
@@ -477,7 +477,7 @@ body { background: #f7f6f2; color: #171717; }
 
 /* Light premium direction */
 .home-hero { min-height: 720px; align-items: stretch; background: #1a1b1d; }
-  .home-hero .hero-image { left: 0; right: 0; background-position: center; }
+  .home-hero .hero-image { left: 0; right: 0; background-position: center bottom; }
   .home-hero .hero-content { width: 100%; max-width: 1050px; padding: 185px 7vw 120px; color: white; text-align: center; }
 .home-hero .hero-content h1 { color: white; }
 .home-hero .hero-welcome { color: rgba(255,255,255,.82); }
