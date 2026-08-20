@@ -3,13 +3,18 @@ import { ArrowRight, BarChart3, BrainCircuit, Calculator, Cloud, Code2, Database
 import { Link } from "wouter";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "./Home";
+import sapToolImage from "@assets/generated_images/jcc-tool-sap-erp.jpg";
+import powerBiToolImage from "@assets/generated_images/jcc-tool-power-bi.jpg";
+import excelToolImage from "@assets/generated_images/jcc-tool-excel.jpg";
+import projectToolImage from "@assets/generated_images/jcc-tool-project.jpg";
+import cloudToolImage from "@assets/generated_images/jcc-tool-cloud.jpg";
 
 const corporateTools = [
-  { icon: Database, accent: "blue", slug: "sap-pmo", title: "SAP ERP", text: "Integración centralizada de los flujos de operaciones, logística y finanzas en una sola fuente de verdad corporativa." },
-  { icon: BarChart3, accent: "gold", slug: "power-bi", title: "Power BI & Business Intelligence", text: "Dashboards ejecutivos con KPIs analíticos en tiempo real para la toma de decisiones gerenciales." },
-  { icon: FileSpreadsheet, accent: "green", slug: "excel-modelamiento", title: "Excel Avanzado & Modelamiento", text: "Modelos financieros complejos, control presupuestario y proyecciones de Budget & Forecast." },
-  { icon: Calculator, accent: "orange", slug: "project-primavera", title: "MS Project & Primavera P6", text: "Cronogramas maestros, análisis de ruta crítica y control estricto de proyectos industriales." },
-  { icon: Cloud, accent: "cyan", slug: "cloud-gobernanza", title: "Integración Cloud & Gobernanza", text: "Sincronización segura de datos entre campo y oficina central, garantizando disponibilidad y cumplimiento." },
+  { icon: Database, accent: "blue", image: sapToolImage, slug: "sap-pmo", title: "SAP ERP", text: "Integración centralizada de los flujos de operaciones, logística y finanzas en una sola fuente de verdad corporativa." },
+  { icon: BarChart3, accent: "gold", image: powerBiToolImage, slug: "power-bi", title: "Power BI & Business Intelligence", text: "Dashboards ejecutivos con KPIs analíticos en tiempo real para la toma de decisiones gerenciales." },
+  { icon: FileSpreadsheet, accent: "green", image: excelToolImage, slug: "excel-modelamiento", title: "Excel Avanzado & Modelamiento", text: "Modelos financieros complejos, control presupuestario y proyecciones de Budget & Forecast." },
+  { icon: Calculator, accent: "orange", image: projectToolImage, slug: "project-primavera", title: "MS Project & Primavera P6", text: "Cronogramas maestros, análisis de ruta crítica y control estricto de proyectos industriales." },
+  { icon: Cloud, accent: "cyan", image: cloudToolImage, slug: "cloud-gobernanza", title: "Integración Cloud & Gobernanza", text: "Sincronización segura de datos entre campo y oficina central, garantizando disponibilidad y cumplimiento." },
 ];
 
 const transformationSteps = [
