@@ -9,10 +9,10 @@ export default function Home() {
     <Navbar />
     <main>
       <section className="home-hero">
-        <div className="hero-image" style={{ backgroundImage: `linear-gradient(90deg, rgba(255,255,255,.94), rgba(255,255,255,.1)), url(${brightHeroImage})` }} />
+        <div className="hero-image" style={{ backgroundImage: `linear-gradient(180deg, rgba(13,34,25,.18), rgba(13,34,25,.68)), url(${brightHeroImage})` }} />
         <div className="hero-content">
-          <p className="eyebrow light">Consultoría estratégica minera</p>
-          <h1>La ventaja competitiva empieza con una mejor decisión.</h1>
+          <p className="eyebrow light">Bienvenidos a JCC Consulting</p>
+          <h1>Bienvenidos.</h1>
           <p className="hero-copy">Ayudamos a las operaciones mineras del Perú a convertir costos, datos y tecnología en resultados sostenibles.</p>
           <Link href="/servicios" className="button button-light">Conozca nuestro trabajo <ArrowRight size={17} /></Link>
         </div>
