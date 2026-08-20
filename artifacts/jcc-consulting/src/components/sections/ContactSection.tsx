@@ -23,7 +23,7 @@ const formSchema = z.object({
   cargo: z.string().min(2, { message: "El cargo es requerido." }),
   email: z.string().email({ message: "Correo electrónico inválido." }),
   telefono: z.string().min(6, { message: "Teléfono es requerido." }),
-  mensaje: z.string().min(10, { message: "El mensaje debe tener al menos 10 caracteres." }),
+  mensaje: z.string().min(2, { message: "Escriba al menos 2 caracteres." }),
 });
 
 export function ContactSection() {
