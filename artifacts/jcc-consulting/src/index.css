@@ -306,7 +306,7 @@ body { background: #f7f6f2; color: #171717; }
 .leader-image::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,21,23,.76), rgba(20,21,23,.08)); }
 .leader-image > div { position: relative; z-index: 1; max-width: 520px; padding: 90px 7vw; color: white; }
 .leader-image h2 { margin-top: 17px; font-family: var(--app-font-display); font-size: clamp(2.2rem, 4vw, 4rem); line-height: 1; letter-spacing: -.06em; font-weight: 500; }
-.premium-tech-section { max-width: 1120px; margin: 0 auto; padding: 95px 7vw; }
+.premium-tech-section { width: 100%; max-width: none; margin: 0 auto; padding: 95px clamp(24px, 6vw, 96px); }
 .premium-section-heading { display: grid; grid-template-columns: 1.15fr .85fr; gap: 80px; align-items: end; margin-bottom: 48px; }
 .premium-section-heading h2 { max-width: 650px; margin-top: 16px; font-family: var(--app-font-display); font-size: clamp(2.2rem, 4vw, 4rem); line-height: 1; letter-spacing: -.06em; font-weight: 500; }
 .premium-section-heading > p { max-width: 420px; color: #666159; line-height: 1.65; padding-bottom: 3px; }
@@ -516,7 +516,7 @@ body { background: #f7f6f2; color: #171717; }
 .home-hero .hero-index { color: rgba(255,255,255,.65); right: 4vw; }
 .editorial-image-section::after { background: linear-gradient(90deg, rgba(22,24,27,.82), rgba(22,24,27,.36) 60%, rgba(22,24,27,.1)); }
 .tool-card, .transformation-card { background: #fff; color: #171717; border-color: #dedad1; box-shadow: 0 8px 25px rgba(34,31,25,.06); }
-.tool-card { min-height: 320px; padding: 0; border-color: #d8d9d2; }
+.tool-card { min-height: clamp(320px, 27vw, 420px); padding: 0; border-color: #d8d9d2; }
 .tool-card .tool-image { position: absolute; inset: 0; z-index: 0; height: auto; margin: 0; background-position: center; background-size: cover; filter: saturate(.86); transition: transform .45s ease, filter .45s ease; }
 .tool-card .tool-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,24,20,.08) 28%, rgba(10,24,20,.84) 100%); }
 .tool-card-content { position: absolute; right: 0; bottom: 0; left: 0; z-index: 1; min-height: 124px; display: flex; flex-direction: column; justify-content: flex-end; padding: 22px 24px 23px; color: white; background: linear-gradient(180deg, rgba(11,26,22,0) 0%, rgba(11,26,22,.9) 46%, rgba(11,26,22,.94) 100%); transition: min-height .35s ease, background .35s ease; }
