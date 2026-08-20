@@ -312,9 +312,14 @@ body { background: #f7f6f2; color: #171717; }
 .premium-section-heading > p { max-width: 420px; color: #666159; line-height: 1.65; padding-bottom: 3px; }
 .tool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .tool-card, .transformation-card { position: relative; min-height: 235px; padding: 28px; overflow: hidden; border: 1px solid #282b33; background: #111319; color: white; transition: transform .25s, border-color .25s, box-shadow .25s; }
+.tool-card { width: 100%; appearance: none; font: inherit; text-align: left; cursor: pointer; }
 .tool-card:hover, .transformation-card:hover { transform: translateY(-5px); border-color: rgba(217,120,78,.65); box-shadow: 0 18px 35px rgba(20,20,20,.14); }
+.tool-card.is-active { border-color: #1f7654; box-shadow: 0 18px 35px rgba(31,118,84,.14); }
 .tool-card h3, .transformation-card h3 { margin: 27px 0 12px; font-family: var(--app-font-display); font-size: 1.08rem; letter-spacing: -.02em; font-weight: 500; }
 .tool-card p, .transformation-card p { color: #9296a3; font-size: .8rem; line-height: 1.6; }
+.tool-card .tool-description { margin-top: 12px; animation: toolDescriptionIn .25s ease both; }
+.tool-card .card-more { display: inline-flex; align-items: center; gap: 7px; }
+@keyframes toolDescriptionIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
 .tool-icon { display: grid; width: 39px; height: 39px; place-items: center; background: rgba(255,255,255,.08); }
 .tool-icon.blue { color: #5ca9ff; background: rgba(55,132,221,.15); }
 .tool-icon.gold { color: #f3c85b; background: rgba(209,156,35,.16); }
