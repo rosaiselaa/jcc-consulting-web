@@ -4,6 +4,7 @@ title = "JCC Consulting"
 version = "1.0.0"
 id = "artifacts/jcc-consulting"
 router = "path"
+videoAspectRatio = "16:9"
 
 [[services]]
 name = "web"

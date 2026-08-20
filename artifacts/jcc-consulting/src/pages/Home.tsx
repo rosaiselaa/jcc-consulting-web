@@ -4,12 +4,23 @@ import { Navbar } from "@/components/sections/Navbar";
 import controlRoomImage from "@assets/generated_images/jcc-control-room.jpg";
 import brightHeroImage from "@assets/generated_images/jcc-bright-mine-hero.jpg";
 
+const valueStages = [
+  { number: "01", title: "Excelencia operacional", text: "Proteger la producción y la productividad." },
+  { number: "02", title: "Costos", text: "Explicar cada desviación con su driver." },
+  { number: "03", title: "Valor comercial", text: "Maximizar NSR, contratos y ventas." },
+  { number: "04", title: "Proyectos", text: "Priorizar capital, riesgo y retorno." },
+  { number: "05", title: "Finanzas & FP&A", text: "Convertir el plan en caja." },
+];
+
 export default function Home() {
   return <div className="site-page">
     <Navbar />
     <main>
       <section className="home-hero">
         <div className="hero-image" style={{ backgroundImage: `linear-gradient(180deg, rgba(13,34,25,.18), rgba(13,34,25,.68)), url(${brightHeroImage})` }} />
+        <video className="hero-video" autoPlay muted loop playsInline poster={brightHeroImage} aria-hidden="true">
+          <source src={`${import.meta.env.BASE_URL}videos/jcc-consulting-hero-loop.mp4`} type="video/mp4" />
+        </video>
         <div className="hero-content">
           <p className="eyebrow light">Bienvenidos a JCC Consulting</p>
           <h1>Bienvenidos.</h1>
@@ -28,6 +39,24 @@ export default function Home() {
           <p>JCC Consulting integra experiencia de terreno, control de gestión y transformación tecnológica para que esa visión sea posible.</p>
           <Link href="/liderazgo" className="text-link">Conozca JCC Consulting <ArrowRight size={16} /></Link>
         </div>
+      </section>
+      <section className="value-model-section">
+        <div className="value-model-heading">
+          <div>
+            <p className="eyebrow">Modelo integral</p>
+            <h2>Una brecha, un driver, un responsable y un impacto en dólares.</h2>
+          </div>
+          <p>Conectamos producción, costos, valor comercial, proyectos, EBITDA y caja para actuar antes y capturar valor.</p>
+        </div>
+        <div className="value-chain" aria-label="Cadena de valor JCC Consulting">
+          {valueStages.map((stage, index) => <div className="value-stage" key={stage.number}>
+            <span className="value-stage-number">{stage.number}</span>
+            <h3>{stage.title}</h3>
+            <p>{stage.text}</p>
+            {index < valueStages.length - 1 && <ArrowRight className="value-stage-arrow" size={18} />}
+          </div>)}
+        </div>
+        <div className="value-model-footer"><span>Datos</span><span>Brecha</span><span>Driver</span><span>Decisión</span><span>Acción</span><strong>Valor capturado</strong></div>
       </section>
       <section className="editorial-image-section">
         <div className="editorial-image" style={{ backgroundImage: `url(${controlRoomImage})` }} />
