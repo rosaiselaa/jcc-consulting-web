@@ -478,6 +478,7 @@ body { background: #f7f6f2; color: #171717; }
   .home-hero .hero-video { z-index: 1; }
   .home-hero .hero-content { width: 100%; max-width: 1050px; padding: 185px 7vw 120px; color: white; text-align: center; }
 .home-hero .hero-content h1 { color: white; }
+.home-hero .hero-welcome { color: rgba(255,255,255,.82); }
 .home-hero .hero-copy { color: rgba(255,255,255,.86); }
 .home-hero .eyebrow.light { color: #f0a47e; }
 .home-hero .button-light { background: #171717; color: white; }

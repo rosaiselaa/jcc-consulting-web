@@ -22,6 +22,7 @@ export default function Home() {
           <source src={`${import.meta.env.BASE_URL}videos/jcc-consulting-hero-loop.mp4`} type="video/mp4" />
         </video>
         <div className="hero-content">
+          <p className="eyebrow hero-welcome">Bienvenidos a JCC Consulting</p>
           <h1>Decisiones que mueven la operación.</h1>
           <p className="hero-copy">Ayudamos a las operaciones mineras del Perú a convertir costos, datos y tecnología en resultados sostenibles.</p>
           <Link href="/servicios" className="button button-light">Conozca nuestro trabajo <ArrowRight size={17} /></Link>
