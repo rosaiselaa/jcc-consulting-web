@@ -340,12 +340,13 @@ body { background: #f7f6f2; color: #171717; }
 .transformation-grid { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .transformation-section .premium-section-heading,
 .transformation-section .transformation-grid { max-width: none; }
-.transformation-card { min-height: 245px; background: #141720; border-color: #252a37; }
+.transformation-card { min-height: clamp(330px, 25vw, 410px); background: #141720; border-color: #252a37; }
 .transformation-card { width: 100%; padding: 0; appearance: none; text-align: left; cursor: pointer; }
 .transformation-image { position: absolute; inset: 0; background-position: center; background-size: cover; filter: saturate(.8); transition: transform .45s ease, opacity .35s ease, filter .35s ease; }
 .transformation-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,18,16,.08) 25%, rgba(8,18,16,.88) 100%); }
 .transformation-content { position: absolute; right: 0; bottom: 0; left: 0; z-index: 1; min-height: 150px; display: flex; flex-direction: column; justify-content: flex-end; padding: 22px 28px 24px; background: linear-gradient(180deg, rgba(8,18,16,0) 0%, rgba(8,18,16,.86) 52%, rgba(8,18,16,.92) 100%); color: white; transition: min-height .35s ease, background .35s ease; }
 .transformation-content .transformation-top { margin-bottom: 18px; }
+.transformation-content .transformation-top { justify-content: flex-end; }
 .transformation-card h3 { margin: 0; color: inherit; }
 .transformation-card p { max-width: 480px; margin: 14px 0 0; color: rgba(255,255,255,.88); }
 .transformation-card .card-more { margin-top: 18px; color: white; }
