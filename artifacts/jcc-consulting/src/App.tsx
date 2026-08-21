@@ -1,8 +1,9 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { useEffect } from 'react';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
-import { Route, Switch, Router as WouterRouter } from 'wouter';
+import { Route, Switch, Router as WouterRouter, useLocation } from 'wouter';
 import Home from '@/pages/Home';
 import Services from '@/pages/Services';
 import Technology from '@/pages/Technology';
@@ -14,6 +15,12 @@ import DetailPage from '@/pages/DetailPage';
 const queryClient = new QueryClient();
 
 function Router() {
+  const [location] = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [location]);
+
   return (
     <Switch>
       <Route path="/" component={Home} />
