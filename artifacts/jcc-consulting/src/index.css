@@ -1155,7 +1155,7 @@ body { background: #f7f6f2; color: #171717; }
 .leadership-page .leadership-feature {
   display: grid;
   width: 100%;
-  grid-template-columns: minmax(0, 1.12fr) minmax(420px, .88fr);
+  grid-template-columns: minmax(0, .84fr) minmax(500px, 1.16fr);
   align-items: stretch;
   background: #f3f1ea;
 }
