@@ -996,7 +996,10 @@ body { background: #f7f6f2; color: #171717; }
 
 /* More immersive leadership opening */
 .leadership-page .page-header {
-  max-width: 1280px;
+  width: calc(100% - 8vw);
+  max-width: 1440px;
+  padding-right: 0;
+  padding-left: 0;
   padding-top: 88px;
   padding-bottom: 68px;
 }
@@ -1010,7 +1013,7 @@ body { background: #f7f6f2; color: #171717; }
   margin-top: 24px;
 }
 .leadership-page .leader-image {
-  width: min(1280px, calc(100% - 12vw));
+  width: min(1440px, calc(100% - 8vw));
   max-width: none;
   min-height: clamp(430px, 39vw, 600px);
 }
@@ -1024,6 +1027,9 @@ body { background: #f7f6f2; color: #171717; }
 
 @media (max-width: 760px) {
   .leadership-page .page-header {
+    width: auto;
+    padding-right: 24px;
+    padding-left: 24px;
     padding-top: 70px;
     padding-bottom: 52px;
   }
