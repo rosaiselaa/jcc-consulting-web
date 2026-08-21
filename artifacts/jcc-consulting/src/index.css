@@ -697,14 +697,14 @@ body { background: #f7f6f2; color: #171717; }
   padding: 84px clamp(24px, 3vw, 56px);
   grid-template-columns: 1.05fr .95fr;
   gap: clamp(50px, 8vw, 120px);
-  background: #173b2d;
-  color: white;
+  background: #dceee5;
+  color: #173b2d;
 }
 .service-visual img { height: 355px; box-shadow: 18px 18px 0 rgba(160,205,181,.18); }
 .service-visual h2 { max-width: 580px; font-size: clamp(2.5rem, 4.2vw, 4.7rem); letter-spacing: -.065em; }
-.service-visual .eyebrow { color: #a9d9be; }
-.service-visual .detail-link { color: #d9f0e2; border-color: #8bc3a5; }
-.service-visual .detail-link:hover { color: white; }
+.service-visual .eyebrow { color: #1f7654; }
+.service-visual .detail-link { color: #1f7654; border-color: #72a58b; }
+.service-visual .detail-link:hover { color: #15583f; }
 .service-grid {
   max-width: none;
   padding: 110px clamp(24px, 3vw, 56px) 125px;
