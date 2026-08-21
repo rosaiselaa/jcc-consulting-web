@@ -994,6 +994,48 @@ body { background: #f7f6f2; color: #171717; }
   .tech-panels article.orange-panel:hover { transform: translateY(-4px); }
 }
 
+/* More immersive leadership opening */
+.leadership-page .page-header {
+  max-width: 1280px;
+  padding-top: 88px;
+  padding-bottom: 68px;
+}
+.leadership-page .page-header h1 {
+  max-width: 930px;
+  font-size: clamp(3.2rem, 5.4vw, 6.4rem);
+  line-height: .96;
+}
+.leadership-page .page-header > p:last-child {
+  max-width: 640px;
+  margin-top: 24px;
+}
+.leadership-page .leader-image {
+  width: min(1280px, calc(100% - 12vw));
+  max-width: none;
+  min-height: clamp(430px, 39vw, 600px);
+}
+.leadership-page .leader-image > div {
+  max-width: 600px;
+  padding: 104px clamp(28px, 7vw, 100px);
+}
+.leadership-page .leader-image h2 {
+  font-size: clamp(2.8rem, 5vw, 5.4rem);
+}
+
+@media (max-width: 760px) {
+  .leadership-page .page-header {
+    padding-top: 70px;
+    padding-bottom: 52px;
+  }
+  .leadership-page .page-header h1 { font-size: 3.35rem; }
+  .leadership-page .leader-image {
+    width: calc(100% - 48px);
+    min-height: 390px;
+  }
+  .leadership-page .leader-image > div { padding: 86px 28px; }
+  .leadership-page .leader-image h2 { font-size: 3rem; }
+}
+
 /* Full-bleed imagery inside the solution modal */
 .solution-modal {
   display: block;
