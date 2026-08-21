@@ -243,7 +243,15 @@ body { background: #f7f6f2; color: #171717; }
 @media (min-width: 761px) {
   .value-model-section { padding-right: 0; padding-left: 0; }
   .value-model-heading { max-width: none; padding-right: 7vw; padding-left: 7vw; }
-  .value-chain { max-width: none; padding-right: 12px; padding-left: 12px; }
+  .value-chain { max-width: none; padding-right: 4vw; padding-left: 4vw; align-items: start; }
+  .value-chain::before,
+  .value-chain::after { top: 78px; transform: rotate(9deg); transform-origin: left center; }
+  .value-stage { min-height: 390px; }
+  .value-chain > .value-stage:nth-of-type(2) { margin-top: 0; }
+  .value-chain > .value-stage:nth-of-type(3) { margin-top: 60px; }
+  .value-chain > .value-stage:nth-of-type(4) { margin-top: 120px; }
+  .value-chain > .value-stage:nth-of-type(5) { margin-top: 180px; }
+  .value-chain > .value-stage:nth-of-type(6) { margin-top: 240px; }
   .value-model-footer { max-width: none; margin-right: 12px; margin-left: 12px; }
 }
 .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
