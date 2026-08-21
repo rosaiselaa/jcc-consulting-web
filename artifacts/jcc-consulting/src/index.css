@@ -310,6 +310,9 @@ body { background: #f7f6f2; color: #171717; }
 .premium-section-heading { display: grid; grid-template-columns: 1.15fr .85fr; gap: 80px; align-items: end; margin-bottom: 48px; }
 .premium-section-heading h2 { max-width: 650px; margin-top: 16px; font-family: var(--app-font-display); font-size: clamp(2.2rem, 4vw, 4rem); line-height: 1; letter-spacing: -.06em; font-weight: 500; }
 .premium-section-heading > p { max-width: 420px; color: #666159; line-height: 1.65; padding-bottom: 3px; }
+.tools-section .premium-section-heading { display: block; }
+.tools-section .premium-section-heading h2 { max-width: 1000px; }
+.tools-section .premium-section-heading > p { max-width: 680px; margin-top: 24px; padding-bottom: 0; }
 .tool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .tool-card, .transformation-card { position: relative; min-height: 235px; padding: 28px; overflow: hidden; border: 1px solid #282b33; background: #111319; color: white; transition: transform .25s, border-color .25s, box-shadow .25s; }
 .tool-card { width: 100%; appearance: none; font: inherit; text-align: left; cursor: pointer; }
