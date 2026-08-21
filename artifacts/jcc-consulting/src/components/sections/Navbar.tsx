@@ -37,9 +37,10 @@ export function Navbar() {
               Servicios <ChevronDown size={14} />
             </Link>
             <div className="invisible absolute left-0 top-8 w-64 translate-y-2 border border-[#ddd9d0] bg-[#f7f6f2] p-3 opacity-0 shadow-xl transition-all group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-              <Link href="/servicios#estrategia" className="menu-link">Estrategia y finanzas</Link>
-              <Link href="/servicios#costos" className="menu-link">Costos y operación</Link>
-              <Link href="/servicios#proyectos" className="menu-link">Proyectos y gestión comercial</Link>
+              <Link href="/detalle/estrategia-finanzas" className="menu-link">Estrategia y finanzas</Link>
+              <Link href="/detalle/excelencia-costos" className="menu-link">Costos y operación</Link>
+              <Link href="/detalle/proyectos-comercial" className="menu-link">Proyectos y gestión comercial</Link>
+              <Link href="/detalle/rentabilidad" className="menu-link">Rentabilidad sostenible</Link>
             </div>
           </div>
           <Link href="/tecnologia" className={`nav-link ${location === "/tecnologia" ? "active" : ""}`}>Tecnología</Link>
@@ -62,7 +63,11 @@ export function Navbar() {
           <div className="flex flex-col gap-1 px-6 py-5">
             {[
               ["/", "Inicio"],
-              ["/servicios", "Servicios"],
+              ["/servicios", "Todos los servicios"],
+              ["/detalle/estrategia-finanzas", "Estrategia y finanzas"],
+              ["/detalle/excelencia-costos", "Costos y operación"],
+              ["/detalle/proyectos-comercial", "Proyectos y gestión comercial"],
+              ["/detalle/rentabilidad", "Rentabilidad sostenible"],
               ["/tecnologia", "Tecnología"],
               ["/liderazgo", "Liderazgo"],
               ["/contacto", "Contacto"],

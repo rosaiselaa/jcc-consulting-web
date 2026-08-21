@@ -281,6 +281,23 @@ body { background: #f7f6f2; color: #171717; }
 .service-row li::before, .tech-panels li::before { content: '—'; color: #c85a31; margin-right: 10px; }
 .service-arrow { color: #c85a31; transition: transform .2s; }
 .service-row:hover .service-arrow { transform: translateX(6px); }
+.service-grid { max-width: 1280px; padding: 90px 7vw 30px; }
+.services-grid-heading { grid-column: 1 / -1; margin-bottom: 12px; }
+.services-grid-heading h2 { max-width: 650px; margin-top: 14px; font-family: var(--app-font-display); font-size: clamp(2.4rem, 4.4vw, 4.5rem); line-height: .98; letter-spacing: -.06em; font-weight: 500; }
+.service-card { position: relative; overflow: hidden; background: #fff; border: 1px solid #d6e4db; box-shadow: 0 12px 30px rgba(35,83,61,.08); transition: transform .25s ease, box-shadow .25s ease; }
+.service-card:hover { transform: translateY(-8px); box-shadow: 0 22px 44px rgba(35,83,61,.15); }
+.service-card-image { aspect-ratio: 16 / 9; background-position: center; background-size: cover; filter: saturate(.82); transition: transform .4s ease; }
+.service-card:hover .service-card-image { transform: scale(1.04); }
+.service-card-body { padding: 28px 30px 32px; }
+.service-card-top { display: flex; align-items: center; justify-content: space-between; color: #1f7654; }
+.service-card-top .service-number { padding-top: 0; }
+.service-card h2 { min-height: 2.5em; margin: 24px 0 12px; font-family: var(--app-font-display); font-size: 1.55rem; line-height: 1.05; letter-spacing: -.04em; font-weight: 500; }
+.service-card .service-intro { min-height: 78px; margin: 0 0 20px; }
+.service-card ul { display: grid; gap: 9px; min-height: 92px; color: #55524c; font-size: .86rem; }
+.service-card li::before { content: "—"; margin-right: 9px; color: #1f7654; }
+.service-card .detail-link { margin-top: 24px; }
+.service-card .detail-link:hover { color: #15583f; }
+.service-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
 .page-cta { max-width: 1120px; margin: 0 auto; padding: 100px 7vw; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
 .page-cta h2 { max-width: 500px; font-family: var(--app-font-display); font-size: 2.4rem; letter-spacing: -.05em; font-weight: 500; }
 .tech-panels { max-width: 1120px; padding: 65px 7vw; margin: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
