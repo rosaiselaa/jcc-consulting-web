@@ -1029,20 +1029,20 @@ body { background: #f7f6f2; color: #171717; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgba(247,246,242,.78);
+  background: rgba(7,29,20,.58);
   backdrop-filter: blur(2px);
 }
 .solution-modal-copy .eyebrow,
 .solution-modal-copy h2,
 .solution-modal-copy p { position: relative; z-index: 1; }
-.solution-modal-copy .eyebrow { color: #15583f; }
-.solution-modal-copy h2 { color: #071d14; text-shadow: 0 1px 0 rgba(255,255,255,.45); }
+.solution-modal-copy .eyebrow { color: #b9e0c7; }
+.solution-modal-copy h2 { color: white; text-shadow: 0 2px 12px rgba(0,0,0,.3); }
 .solution-modal-copy .solution-modal-lead,
 .solution-modal-copy .solution-modal-detail { max-width: 680px; }
-.solution-modal-lead { color: #102c20; font-weight: 600; }
-.solution-modal-detail { color: #263e32; }
-.solution-modal-image { opacity: .9; }
-.solution-modal::after { background: rgba(247,246,242,.06); }
+.solution-modal-lead { color: white; font-weight: 600; text-shadow: 0 1px 8px rgba(0,0,0,.28); }
+.solution-modal-detail { color: rgba(255,255,255,.88); text-shadow: 0 1px 7px rgba(0,0,0,.28); }
+.solution-modal-image { opacity: .58; }
+.solution-modal::after { background: rgba(7,29,20,.18); }
 
 @media (max-width: 700px) {
   .solution-modal { min-height: 0; }
@@ -1052,7 +1052,7 @@ body { background: #f7f6f2; color: #171717; }
     min-height: 0;
     margin: 0;
     padding: 54px 26px 38px;
-    background: rgba(247,246,242,.84);
+    background: rgba(7,29,20,.62);
     backdrop-filter: blur(2px);
   }
 }
