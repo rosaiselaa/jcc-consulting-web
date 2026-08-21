@@ -287,8 +287,28 @@ body { background: #f7f6f2; color: #171717; }
   .value-chain > .value-stage:nth-of-type(6) { margin-top: 240px; }
   .value-model-footer { max-width: none; margin-right: 12px; margin-left: 12px; }
 }
-.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
-.feature-card { min-height: 330px; padding: 42px; display: flex; flex-direction: column; gap: 16px; background: #e8e5dd; color: #171717; transition: transform .25s, background .25s; }
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 78px 7vw 104px;
+  background: #edf7f1;
+}
+.feature-card {
+  position: relative;
+  z-index: 1;
+  min-height: 390px;
+  padding: 46px 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #e8e5dd;
+  color: #171717;
+  border: 1px solid rgba(31,118,84,.12);
+  border-radius: 16px;
+  box-shadow: 0 22px 45px rgba(23,59,45,.15), 0 5px 12px rgba(23,59,45,.06);
+  transition: transform .25s, background .25s, box-shadow .25s;
+}
 .feature-card:hover { transform: translateY(-6px); background: #dedad0; }
 .feature-card.orange { background: #d9784e; color: white; }
 .feature-card.dark { background: #202124; color: white; }
