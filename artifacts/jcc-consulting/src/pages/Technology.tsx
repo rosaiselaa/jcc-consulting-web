@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, BarChart3, BrainCircuit, Calculator, Cloud, Code2, Database, FileSpreadsheet, Gauge, GitBranch, Network, Workflow } from "lucide-react";
+import { ArrowRight, BarChart3, Calculator, Cloud, Database, FileSpreadsheet, Gauge } from "lucide-react";
 import { Link } from "wouter";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "./Home";
@@ -24,12 +24,12 @@ const corporateTools = [
 ];
 
 const transformationSteps = [
-  { icon: GitBranch, image: processMappingImage, slug: "mapeo-procesos", label: "Mapeo de procesos", tag: "PROCESS MAPPING", text: "Levantamiento y documentación de procesos end-to-end mina–planta–finanzas para identificar cuellos de botella." },
-  { icon: Workflow, image: rpaImage, slug: "rpa", label: "Automatización robótica", tag: "RPA", text: "Bots de software que ejecutan tareas repetitivas de conciliación, carga de datos y generación de reportes." },
-  { icon: BrainCircuit, image: predictiveImage, slug: "modelos-predictivos", label: "Machine Learning & modelos predictivos", tag: "PREDICTIVE AI", text: "Algoritmos para anticipar fallas en maquinaria crítica, desviaciones de costos y variables operativas." },
-  { icon: BrainCircuit, image: computerVisionImage, slug: "computer-vision", label: "Deep Learning & Computer Vision", tag: "NEURAL NETWORKS", text: "Redes neuronales profundas para video e imágenes en tiempo real, control automatizado y detección de anomalías." },
-  { icon: Database, image: dataArchitectureImage, slug: "arquitectura-datos", label: "Arquitectura de datos: SQL & Big Data", tag: "DATA ARCHITECTURE", text: "SQL Server para el núcleo transaccional y Data Lakes para el volumen masivo de sensores y sistemas." },
-  { icon: Code2, image: dataEngineeringImage, slug: "data-engineering", label: "Python Pipelines & Data Engineering", tag: "BACKEND & ETL", text: "Tuberías ETL automatizadas para limpieza, transformación y procesamiento masivo de múltiples fuentes." },
+  { image: processMappingImage, slug: "mapeo-procesos", label: "Mapeo de procesos", tag: "PROCESS MAPPING", text: "Levantamiento y documentación de procesos end-to-end mina–planta–finanzas para identificar cuellos de botella." },
+  { image: rpaImage, slug: "rpa", label: "Automatización robótica", tag: "RPA", text: "Bots de software que ejecutan tareas repetitivas de conciliación, carga de datos y generación de reportes." },
+  { image: predictiveImage, slug: "modelos-predictivos", label: "Machine Learning & modelos predictivos", tag: "PREDICTIVE AI", text: "Algoritmos para anticipar fallas en maquinaria crítica, desviaciones de costos y variables operativas." },
+  { image: computerVisionImage, slug: "computer-vision", label: "Deep Learning & Computer Vision", tag: "NEURAL NETWORKS", text: "Redes neuronales profundas para video e imágenes en tiempo real, control automatizado y detección de anomalías." },
+  { image: dataArchitectureImage, slug: "arquitectura-datos", label: "Arquitectura de datos: SQL & Big Data", tag: "DATA ARCHITECTURE", text: "SQL Server para el núcleo transaccional y Data Lakes para el volumen masivo de sensores y sistemas." },
+  { image: dataEngineeringImage, slug: "data-engineering", label: "Python Pipelines & Data Engineering", tag: "BACKEND & ETL", text: "Tuberías ETL automatizadas para limpieza, transformación y procesamiento masivo de múltiples fuentes." },
 ];
 
 export default function Technology() {
