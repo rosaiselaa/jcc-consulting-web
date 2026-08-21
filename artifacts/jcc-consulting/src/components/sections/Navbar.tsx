@@ -21,8 +21,8 @@ export function Navbar() {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? "bg-[#f7f6f2]/95 shadow-sm backdrop-blur-md" : "bg-[#f7f6f2]"
+    <nav className={`site-navbar fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled ? "shadow-md backdrop-blur-md" : ""
     }`}>
       <div className="mx-auto flex h-[76px] max-w-[1380px] items-center justify-between px-6 lg:px-10">
         <Link href="/">

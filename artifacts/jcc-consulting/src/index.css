@@ -182,14 +182,18 @@ html {
 }
 body { background: #f7f6f2; color: #171717; }
 .site-page { min-height: 100vh; background: #f7f6f2; color: #171717; }
-.nav-link { position: relative; color: #55524c; font-size: .82rem; letter-spacing: .01em; transition: color .2s; }
+.site-navbar { background: rgba(255,255,255,.97); border-bottom: 1px solid #d8e6de; box-shadow: 0 7px 24px rgba(23,59,45,.08); }
+.site-navbar .nav-link { position: relative; color: #3f4944; font-size: .82rem; font-weight: 600; letter-spacing: .01em; transition: color .2s, background .2s; }
+.site-navbar .nav-link:hover { color: #173b2d; }
 .nav-link:hover, .nav-link.active { color: #171717; }
-.nav-link.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: -11px; height: 2px; background: #c85a31; }
+.site-navbar .nav-link.active { color: #1f7654; }
+.site-navbar .nav-link.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: -11px; height: 3px; background: #1f7654; }
 .nav-cta { background: #c85a31; color: white; padding: 12px 21px; font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; transition: background .2s; }
 .nav-cta:hover { background: #a94825; }
-.menu-link, .mobile-link { display: block; padding: 10px 12px; color: #55524c; font-size: .84rem; transition: all .2s; }
+.menu-link, .mobile-link { display: block; padding: 10px 12px; color: #3f4944; font-size: .84rem; transition: all .2s; }
 .menu-link:hover, .mobile-link:hover { background: #ebe8e1; color: #171717; }
 .mobile-link { font-size: 1.05rem; border-bottom: 1px solid #e1ded7; padding: 14px 0; }
+.site-navbar .group > div { top: 44px; border-color: #d8e6de; background: white; box-shadow: 0 18px 38px rgba(23,59,45,.14); }
 .home-hero { position: relative; min-height: 720px; display: flex; align-items: flex-end; overflow: hidden; background: #1a1b1d; }
 .hero-image { position: absolute; inset: -2.5%; z-index: 0; background-position: center bottom; background-size: cover; animation: hero-slow-zoom 8s ease-in-out infinite alternate; transform-origin: 72% 88%; will-change: transform; }
 @keyframes hero-slow-zoom {
