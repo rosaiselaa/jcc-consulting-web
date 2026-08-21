@@ -1240,6 +1240,190 @@ body { background: #f7f6f2; color: #171717; }
   }
 }
 
+/* Premium contact composition */
+.contact-section-premium {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(76px, 9vw, 130px) 7vw;
+  background: #e8f1eb !important;
+  border-top: 0 !important;
+}
+.contact-section-premium::before,
+.contact-section-premium::after {
+  content: '';
+  position: absolute;
+  border: 1px solid rgba(31,118,84,.16);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.contact-section-premium::before {
+  width: 520px;
+  height: 520px;
+  left: -260px;
+  top: -220px;
+}
+.contact-section-premium::after {
+  width: 420px;
+  height: 420px;
+  right: -190px;
+  bottom: -230px;
+  box-shadow: 0 0 0 35px rgba(31,118,84,.04);
+}
+.contact-section-premium > .container {
+  position: relative;
+  z-index: 1;
+  max-width: 1240px;
+}
+.contact-section-premium .grid {
+  align-items: center;
+  gap: clamp(44px, 8vw, 120px);
+}
+.contact-section-premium .lg\:col-span-2 {
+  position: relative;
+}
+.contact-section-premium .lg\:col-span-2::after {
+  content: 'JCC';
+  position: absolute;
+  right: 0;
+  bottom: -72px;
+  color: rgba(31,118,84,.08);
+  font-family: var(--app-font-display);
+  font-size: 8rem;
+  font-weight: 600;
+  letter-spacing: -.12em;
+  line-height: .7;
+}
+.contact-section-premium h2 {
+  color: #1f7654 !important;
+  margin-bottom: 18px;
+  letter-spacing: .14em;
+  font-size: .72rem;
+}
+.contact-section-premium h3 {
+  max-width: 520px;
+  margin-bottom: 24px;
+  color: #102d21 !important;
+  font-family: var(--app-font-display);
+  font-size: clamp(2.7rem, 5vw, 5.4rem);
+  line-height: .95;
+  letter-spacing: -.065em;
+}
+.contact-section-premium .lg\:col-span-2 > div > p {
+  max-width: 480px;
+  color: #53665b !important;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.contact-section-premium .space-y-8 {
+  position: relative;
+  z-index: 1;
+  margin-top: 42px;
+}
+.contact-section-premium .space-y-8 > div {
+  gap: 18px;
+}
+.contact-section-premium .space-y-8 > div > div:first-child {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  background: #fff;
+  border-color: rgba(31,118,84,.18);
+  color: #1f7654;
+  box-shadow: 0 8px 18px rgba(27,68,49,.07);
+}
+.contact-section-premium .space-y-8 p,
+.contact-section-premium .space-y-8 a {
+  color: #173b2d !important;
+}
+.contact-section-premium .space-y-8 p {
+  margin-bottom: 3px;
+}
+.contact-section-premium .lg\:col-span-3 > div {
+  padding: clamp(30px, 4vw, 56px);
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(31,118,84,.13);
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(32,68,49,.13);
+}
+.contact-section-premium h4 {
+  margin-bottom: 32px;
+  color: #173b2d !important;
+  font-family: var(--app-font-display);
+  font-size: 2rem;
+  letter-spacing: -.045em;
+}
+.contact-section-premium form {
+  gap: 20px;
+}
+.contact-section-premium label {
+  color: #38634f !important;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+}
+.contact-section-premium input,
+.contact-section-premium textarea {
+  min-height: 48px;
+  margin-top: 7px;
+  border: 1px solid #d4e0d8;
+  border-radius: 8px;
+  background: #f7faf7 !important;
+  color: #173b2d !important;
+  box-shadow: none;
+}
+.contact-section-premium textarea {
+  min-height: 132px;
+  padding-top: 13px;
+}
+.contact-section-premium input:focus,
+.contact-section-premium textarea:focus {
+  border-color: #1f7654;
+  box-shadow: 0 0 0 3px rgba(31,118,84,.12);
+}
+.contact-section-premium input::placeholder,
+.contact-section-premium textarea::placeholder {
+  color: #94a39a;
+}
+.contact-section-premium button[type="submit"] {
+  min-height: 52px;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 8px;
+  background: #1f7654;
+  color: white;
+  font-weight: 700;
+  letter-spacing: .01em;
+  box-shadow: 0 10px 20px rgba(31,118,84,.2);
+}
+.contact-section-premium button[type="submit"]:hover {
+  background: #15583f;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 760px) {
+  .contact-section-premium {
+    padding: 72px 24px;
+  }
+  .contact-section-premium .lg\:col-span-2::after {
+    right: 0;
+    bottom: -42px;
+    font-size: 6rem;
+  }
+  .contact-section-premium h3 {
+    font-size: 3.35rem;
+  }
+  .contact-section-premium .space-y-8 {
+    margin-top: 34px;
+  }
+  .contact-section-premium .lg\:col-span-3 > div {
+    padding: 28px 20px;
+    border-radius: 20px;
+  }
+  .contact-section-premium h4 {
+    font-size: 1.7rem;
+  }
+}
+
 /* Full-bleed imagery inside the solution modal */
 .solution-modal {
   display: block;

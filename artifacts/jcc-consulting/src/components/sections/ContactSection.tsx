@@ -65,7 +65,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contacto" className="py-32 bg-background relative border-t border-white/5">
+    <section id="contacto" className="contact-section-premium py-32 bg-background relative border-t border-white/5">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid lg:grid-cols-5 gap-16">
           
