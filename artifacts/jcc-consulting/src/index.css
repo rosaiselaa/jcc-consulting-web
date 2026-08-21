@@ -692,11 +692,11 @@ body { background: #f7f6f2; color: #171717; }
 .contact-page .bg-card { background: #fff; }
 .contact-page .bg-background { background: #f7f6f2; }
 .contact-page .border-border { border-color: #dedad1; }
-.chat-window { background: #fff; }
-.chat-header { background: #f0ede7; color: #171717; border-bottom: 1px solid #dedad1; }
-.chat-header button { color: #171717; }
-.chat-message.bot { background: #f0ede7; color: #3b3934; }
-.chat-form input { color: #171717; }
+.chat-window { background: #fbfdfb; color: #173b2d; }
+.chat-header { background: linear-gradient(135deg, #173b2d 0%, #1f7654 100%); color: white; border-bottom: 0; }
+.chat-header button { color: white; }
+.chat-message.bot { background: #e1f1e8; color: #173b2d; }
+.chat-form input { color: #173b2d; }
 .tool-grid { display: flex; gap: 16px; overflow-x: auto; padding: 5px 2px 22px; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #1f7654 #e7eee9; }
 .tool-grid .tool-card { flex: 0 0 calc((100% - 32px) / 3); scroll-snap-align: start; }
 .tool-card-content .tool-icon img { width: 30px; height: 30px; object-fit: contain; }
