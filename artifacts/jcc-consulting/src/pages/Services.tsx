@@ -3,10 +3,10 @@ import { Link } from "wouter";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "./Home";
 import mineralImage from "@assets/generated_images/jcc-mineral-detail.jpg";
-import strategyImage from "@assets/generated_images/jcc-estrategia-finanzas.jpg";
-import costsImage from "@assets/generated_images/jcc-excelencia-costos.jpg";
-import projectsImage from "@assets/generated_images/jcc-proyectos-comercial.jpg";
-import profitabilityImage from "@assets/generated_images/jcc-rentabilidad.jpg";
+import strategyImage from "@assets/generated_images/jcc-service-strategy-finance.jpg";
+import costsImage from "@assets/generated_images/jcc-service-operational-costs.jpg";
+import projectsImage from "@assets/generated_images/jcc-service-projects-commercial.jpg";
+import profitabilityImage from "@assets/generated_images/jcc-service-sustainable-profitability.jpg";
 
 const groups = [
   { id: "estrategia", detailSlug: "estrategia-finanzas", icon: Crosshair, number: "01", title: "Estrategia y finanzas corporativas", intro: "Alineamos las decisiones financieras con lo que realmente ocurre en la operación.", image: strategyImage, items: ["Planeamiento estratégico y Balanced Scorecard", "Planeamiento y control financiero", "Gestión de Working Capital, CAPEX y flujos de caja", "Valorización de empresas y M&A"] },
