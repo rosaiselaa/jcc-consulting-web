@@ -45,13 +45,23 @@ export function Chatbot() {
 
   return <div className="chatbot">
     {open && <div className="chat-window">
-      <div className="chat-header"><div className="chat-agent"><span className="chat-agent-icon"><Bot size={17} /></span><span><strong>Asistente JCC</strong><small>Responde en segundos</small></span></div><button onClick={() => setOpen(false)} aria-label="Cerrar chat"><X size={17} /></button></div>
+      <div className="chat-header">
+        <div className="chat-agent">
+          <span className="chat-agent-icon"><Bot size={18} /></span>
+          <span><strong>Asistente JCC</strong><small><i /> Disponible para orientarle</small></span>
+        </div>
+        <button onClick={() => setOpen(false)} aria-label="Cerrar chat"><X size={18} /></button>
+      </div>
+      <div className="chat-welcome">
+        <p className="chat-eyebrow">JCC CONSULTING / ORIENTACIÓN INICIAL</p>
+        <h3>Conversemos sobre su operación.</h3>
+      </div>
       <div className="chat-messages">{messages.map((message, index) => <div className={`chat-message ${message.from}`} key={`${message.text}-${index}`}>{message.text}</div>)}</div>
       <p className="chat-prompt">Preguntas frecuentes</p>
       <div className="chat-suggestion"><button onClick={() => ask("¿Qué incluye el diagnóstico de 30 días?")}>Diagnóstico 30 días</button><button onClick={() => ask("¿Qué servicios ofrecen?")}>Servicios</button><button onClick={() => ask("¿Cómo ayudan con SAP?")}>SAP PMO</button></div>
       <form onSubmit={submit} className="chat-form"><input value={value} onChange={(event) => setValue(event.target.value)} placeholder="Escriba su consulta..." aria-label="Escriba su consulta" /><button type="submit" aria-label="Enviar"><Send size={16} /></button></form>
-      <Link href="/contacto" className="chat-contact" onClick={() => setOpen(false)}>Agendar una conversación <span>→</span></Link>
+      <Link href="/contacto" className="chat-contact" onClick={() => setOpen(false)}><span>¿Prefiere hablar con un especialista?</span><strong>Agendar conversación <b>→</b></strong></Link>
     </div>}
-    <button className="chat-toggle" onClick={() => setOpen((current) => !current)} aria-label={open ? "Cerrar asistente" : "Abrir asistente"}>{open ? <X size={22} /> : <MessageCircle size={22} />}<span>{open ? "" : "¿En qué podemos ayudar?"}</span></button>
+    <button className={`chat-toggle ${open ? "is-open" : ""}`} onClick={() => setOpen((current) => !current)} aria-label={open ? "Cerrar asistente" : "Abrir asistente"}>{open ? <X size={20} /> : <MessageCircle size={20} />}<span>{open ? "Cerrar asistente" : "¿En qué podemos ayudar?"}</span></button>
   </div>;
 }
