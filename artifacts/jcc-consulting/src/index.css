@@ -594,44 +594,6 @@ body { background: #f7f6f2; color: #171717; }
   .register-card { padding: 28px 22px; }
 }
 
-/* Desktop uses a panoramic 16:9 rhythm without forcing text-heavy sections. */
-@media (min-width: 761px) {
-  .home-hero,
-  .editorial-image-section,
-  .leader-image {
-    aspect-ratio: 16 / 9;
-    min-height: 0;
-  }
-
-  .feature-card,
-  .tool-card,
-  .transformation-card,
-  .detail-hero img,
-  .service-visual img {
-    aspect-ratio: 16 / 9;
-  }
-
-  .feature-card,
-  .tech-panels article,
-  .tool-card,
-  .transformation-card {
-    min-height: 0;
-  }
-
-  .tech-panels article {
-    padding: clamp(32px, 3.2vw, 52px);
-  }
-
-  .tech-panels article svg {
-    margin-bottom: clamp(24px, 4vw, 70px);
-  }
-
-  .detail-hero img,
-  .service-visual img {
-    height: auto;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .hero-image { animation: none; }
 }
