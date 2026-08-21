@@ -240,6 +240,12 @@ body { background: #f7f6f2; color: #171717; }
 .value-model-footer { max-width: 1120px; margin: 28px auto 0; display: grid; grid-template-columns: repeat(5, 1fr) 1.45fr; border: 1px solid #c7ded0; background: rgba(255,255,255,.55); }
 .value-model-footer span, .value-model-footer strong { padding: 13px 15px; color: #426d5b; font-size: .67rem; letter-spacing: .09em; text-transform: uppercase; }
 .value-model-footer strong { display: flex; align-items: center; background: #0d5945; color: white; font-weight: 600; }
+@media (min-width: 761px) {
+  .value-model-section { padding-right: 0; padding-left: 0; }
+  .value-model-heading { max-width: none; padding-right: 7vw; padding-left: 7vw; }
+  .value-chain { max-width: none; padding-right: 12px; padding-left: 12px; }
+  .value-model-footer { max-width: none; margin-right: 12px; margin-left: 12px; }
+}
 .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
 .feature-card { min-height: 330px; padding: 42px; display: flex; flex-direction: column; gap: 16px; background: #e8e5dd; color: #171717; transition: transform .25s, background .25s; }
 .feature-card:hover { transform: translateY(-6px); background: #dedad0; }
