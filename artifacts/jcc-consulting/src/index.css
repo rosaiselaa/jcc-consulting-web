@@ -182,7 +182,8 @@ html {
 }
 body { background: #f7f6f2; color: #171717; }
 .site-page { min-height: 100vh; background: #f7f6f2; color: #171717; }
-.site-navbar { background: rgba(255,255,255,.97); border-bottom: 1px solid #d8e6de; box-shadow: 0 7px 24px rgba(23,59,45,.08); }
+.site-navbar { top: 18px; background: transparent; border-bottom: 0; box-shadow: none; pointer-events: none; }
+.site-navbar .nav-shell { background: rgba(255,255,255,.94); border: 1px solid rgba(216,230,222,.95); border-radius: 999px; box-shadow: 0 12px 32px rgba(23,59,45,.12); pointer-events: auto; }
 .site-navbar .nav-link { position: relative; color: #3f4944; font-size: .82rem; font-weight: 600; letter-spacing: .01em; transition: color .2s, background .2s; }
 .site-navbar .nav-link:hover { color: #173b2d; }
 .nav-link:hover, .nav-link.active { color: #171717; }
@@ -194,6 +195,10 @@ body { background: #f7f6f2; color: #171717; }
 .menu-link:hover, .mobile-link:hover { background: #ebe8e1; color: #171717; }
 .mobile-link { font-size: 1.05rem; border-bottom: 1px solid #e1ded7; padding: 14px 0; }
 .site-navbar .group > div { top: 44px; border-color: #d8e6de; background: white; box-shadow: 0 18px 38px rgba(23,59,45,.14); }
+@media (max-width: 760px) {
+  .site-navbar { top: 0; }
+  .site-navbar .nav-shell { border-radius: 0; border-right: 0; border-left: 0; box-shadow: 0 7px 24px rgba(23,59,45,.08); }
+}
 .home-hero { position: relative; min-height: 720px; display: flex; align-items: flex-end; overflow: hidden; background: #1a1b1d; }
 .hero-image { position: absolute; inset: -2.5%; z-index: 0; background-position: center bottom; background-size: cover; animation: hero-slow-zoom 8s ease-in-out infinite alternate; transform-origin: 72% 88%; will-change: transform; }
 @keyframes hero-slow-zoom {

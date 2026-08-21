@@ -24,7 +24,7 @@ export function Navbar() {
     <nav className={`site-navbar fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? "shadow-md backdrop-blur-md" : ""
     }`}>
-      <div className="mx-auto flex h-[76px] max-w-[1380px] items-center justify-between px-6 lg:px-10">
+      <div className="nav-shell mx-auto flex h-[66px] max-w-[1380px] items-center justify-between px-6 lg:px-10">
         <Link href="/">
           <div className="cursor-pointer whitespace-nowrap text-[25px] font-bold tracking-[-0.055em] text-[#171717]">
             JCC Consulting<span className="text-[#c85a31]">.</span>
