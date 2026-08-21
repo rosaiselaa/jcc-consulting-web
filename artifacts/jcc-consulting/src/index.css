@@ -1054,33 +1054,33 @@ body { background: #f7f6f2; color: #171717; }
   grid-template-columns: minmax(260px, 360px) minmax(0, 760px);
   justify-content: center;
   gap: clamp(48px, 8vw, 130px);
-  background: #15583f;
-  color: white;
+  background: #f0eee7;
+  color: #173b2d;
 }
 .leadership-page .leader-mark {
   width: 100%;
-  background: rgba(255,255,255,.09);
-  border: 1px solid rgba(255,255,255,.28);
+  background: #1f7654;
+  border: 1px solid #1f7654;
   color: white;
   font-size: clamp(6rem, 10vw, 9rem);
   box-shadow: inset 0 0 0 14px rgba(255,255,255,.035);
 }
-.leadership-page .leader-profile .eyebrow { color: #b9e0c7; }
+.leadership-page .leader-profile .eyebrow { color: #1f7654; }
 .leadership-page .leader-profile h2 {
   margin: 16px 0 26px;
-  color: white;
+  color: #173b2d;
   font-size: clamp(3.2rem, 5.5vw, 5.8rem);
   line-height: .92;
 }
 .leadership-page .leader-description {
   max-width: 680px;
-  color: rgba(255,255,255,.82);
+  color: #5d625d;
   font-size: 1.1rem;
   line-height: 1.75;
 }
 .leadership-page .leader-facts {
   margin-top: 40px;
-  color: rgba(255,255,255,.9);
+  color: #4c554f;
   gap: 18px 30px;
 }
 .leadership-page .leader-facts svg { color: #b9e0c7; }
