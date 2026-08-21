@@ -338,6 +338,8 @@ body { background: #f7f6f2; color: #171717; }
 .transformation-section .premium-section-heading { max-width: 1120px; margin-left: auto; margin-right: auto; }
 .transformation-section .premium-section-heading > p { color: #9398a6; }
 .transformation-grid { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.transformation-section .premium-section-heading,
+.transformation-section .transformation-grid { max-width: none; }
 .transformation-card { min-height: 245px; background: #141720; border-color: #252a37; }
 .transformation-top { display: flex; align-items: center; justify-content: space-between; }
 .transformation-top span { color: #858b99; font-family: monospace; font-size: .57rem; letter-spacing: .12em; border: 1px solid #2b3040; padding: 5px 7px; }
