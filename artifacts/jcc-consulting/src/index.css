@@ -791,6 +791,42 @@ body { background: #f7f6f2; color: #171717; }
   .detail-next-link { display: inline-flex; margin-top: 35px; }
 }
 
+/* Premium footer */
+.site-footer {
+  display: block;
+  padding: 82px clamp(24px, 7vw, 120px) 24px;
+  background: #173b2d;
+  color: rgba(255,255,255,.72);
+  border-top: 0;
+}
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.45fr .65fr 1fr;
+  gap: 70px;
+  padding-bottom: 74px;
+  border-bottom: 1px solid rgba(185,224,201,.22);
+}
+.footer-brand-block { max-width: 390px; }
+.footer-brand { color: white; font-size: clamp(2.4rem, 4vw, 4rem); line-height: .9; letter-spacing: -.09em; }
+.footer-brand span { color: #9bd0ae; }
+.footer-brand-block > p { margin-top: 24px; color: rgba(255,255,255,.74); font-size: 1rem; line-height: 1.6; }
+.footer-brand-block .footer-tagline { margin-top: 10px; color: #b9e0c7; font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.footer-column { display: flex; flex-direction: column; align-items: flex-start; gap: 13px; padding-top: 5px; }
+.footer-column a, .footer-column span { color: rgba(255,255,255,.72); font-size: .86rem; line-height: 1.4; transition: color .2s, transform .2s; }
+.footer-column a:hover { color: white; transform: translateX(4px); }
+.footer-label { margin-bottom: 11px; color: #a9d9be; font-size: .68rem; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+.footer-contact a:first-of-type { color: white; }
+.footer-contact-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 10px; padding-bottom: 7px; border-bottom: 1px solid #8bc3a5; color: #d9f0e2 !important; font-size: .72rem !important; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 22px; color: rgba(255,255,255,.48); font-size: .68rem; letter-spacing: .03em; }
+
+@media (max-width: 760px) {
+  .site-footer { padding: 62px 24px 22px; }
+  .footer-main { grid-template-columns: 1fr 1fr; gap: 46px 28px; padding-bottom: 50px; }
+  .footer-brand-block { grid-column: 1 / -1; }
+  .footer-brand { font-size: 3.3rem; }
+  .footer-bottom { flex-direction: column; gap: 8px; }
+}
+
 @media (max-width: 760px) {
   .home-hero { min-height: 760px; display: flex; flex-direction: column; justify-content: center; }
   .home-hero .hero-image { position: absolute; inset: -2.5%; order: initial; width: auto; height: auto; background-position: center bottom; }

@@ -96,5 +96,30 @@ export default function Home() {
 }
 
 export function Footer() {
-  return <footer className="site-footer"><div className="footer-brand">JCC<span>.</span></div><p>Consultoría minera y transformación financiera</p><div><a href="mailto:jccente@jccconsulting.com.pe">jccente@jccconsulting.com.pe</a><br />Lima, Perú</div></footer>;
+  return <footer className="site-footer">
+    <div className="footer-main">
+      <div className="footer-brand-block">
+        <div className="footer-brand">JCC Consulting<span>.</span></div>
+        <p>Consultoría minera y transformación financiera.</p>
+        <p className="footer-tagline">Decisiones que mueven la operación.</p>
+      </div>
+      <div className="footer-column">
+        <p className="footer-label">Explorar</p>
+        <Link href="/servicios">Servicios</Link>
+        <Link href="/tecnologia">Tecnología</Link>
+        <Link href="/liderazgo">Liderazgo</Link>
+      </div>
+      <div className="footer-column footer-contact">
+        <p className="footer-label">Conversemos</p>
+        <a href="mailto:jccente@jccconsulting.com.pe">jccente@jccconsulting.com.pe</a>
+        <span>Lima, Perú</span>
+        <Link href="/contacto" className="footer-contact-link">Agendar una conversación <ArrowRight size={14} /></Link>
+      </div>
+    </div>
+    <div className="footer-bottom">
+      <span>© {new Date().getFullYear()} JCC Consulting</span>
+      <span>Gestión integrada para la minería.</span>
+      <span>Todos los derechos reservados.</span>
+    </div>
+  </footer>;
 }
