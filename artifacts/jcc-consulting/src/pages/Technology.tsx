@@ -8,12 +8,12 @@ import powerBiToolImage from "@assets/generated_images/jcc-tool-power-bi.jpg";
 import excelToolImage from "@assets/generated_images/jcc-tool-excel.jpg";
 import projectToolImage from "@assets/generated_images/jcc-tool-project.jpg";
 import cloudToolImage from "@assets/generated_images/jcc-tool-cloud.jpg";
-import processMappingImage from "@assets/generated_images/jcc-mapeo-procesos-BFAoUnXb.jpg";
-import rpaImage from "@assets/generated_images/jcc-rpa-f3btq0Pe.jpg";
-import predictiveImage from "@assets/generated_images/jcc-modelos-predictivos-CjwcI_is.jpg";
-import computerVisionImage from "@assets/generated_images/jcc-computer-vision-BkIKXGDi.jpg";
-import dataArchitectureImage from "@assets/generated_images/jcc-arquitectura-datos-CIIHP0mI.jpg";
-import dataEngineeringImage from "@assets/generated_images/jcc-data-engineering-BF0qEE_W.jpg";
+import processMappingImage from "@assets/generated_images/jcc-mapeo-procesos.jpg";
+import rpaImage from "@assets/generated_images/jcc-rpa.jpg";
+import predictiveImage from "@assets/generated_images/jcc-modelos-predictivos.jpg";
+import computerVisionImage from "@assets/generated_images/jcc-computer-vision.jpg";
+import dataArchitectureImage from "@assets/generated_images/jcc-arquitectura-datos.jpg";
+import dataEngineeringImage from "@assets/generated_images/jcc-data-engineering.jpg";
 
 const corporateTools = [
   { icon: Database, accent: "blue", image: sapToolImage, slug: "sap-pmo", title: "SAP ERP", text: "Integración centralizada de los flujos de operaciones, logística y finanzas en una sola fuente de verdad corporativa." },
