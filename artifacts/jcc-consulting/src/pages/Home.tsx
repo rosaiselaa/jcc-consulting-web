@@ -3,13 +3,18 @@ import { Link } from "wouter";
 import { Navbar } from "@/components/sections/Navbar";
 import controlRoomImage from "@assets/generated_images/jcc-control-room.jpg";
 import brightHeroImage from "@assets/generated_images/jcc-bright-mine-hero.jpg";
+import operationalExcellenceImage from "@assets/generated_images/jcc-excelencia-costos.jpg";
+import profitabilityImage from "@assets/generated_images/jcc-rentabilidad.jpg";
+import commercialValueImage from "@assets/generated_images/jcc-proyectos-comercial.jpg";
+import projectsImage from "@assets/generated_images/jcc-project-primavera.jpg";
+import financeImage from "@assets/generated_images/jcc-estrategia-finanzas.jpg";
 
 const valueStages = [
-  { number: "01", title: "Excelencia operacional", text: "Proteger la producción y la productividad." },
-  { number: "02", title: "Costos", text: "Explicar cada desviación con su driver." },
-  { number: "03", title: "Valor comercial", text: "Maximizar NSR, contratos y ventas." },
-  { number: "04", title: "Proyectos", text: "Priorizar capital, riesgo y retorno." },
-  { number: "05", title: "Finanzas & FP&A", text: "Convertir el plan en caja." },
+  { number: "01", title: "Excelencia operacional", text: "Proteger la producción y la productividad.", image: operationalExcellenceImage },
+  { number: "02", title: "Costos", text: "Explicar cada desviación con su driver.", image: profitabilityImage },
+  { number: "03", title: "Valor comercial", text: "Maximizar NSR, contratos y ventas.", image: commercialValueImage },
+  { number: "04", title: "Proyectos", text: "Priorizar capital, riesgo y retorno.", image: projectsImage },
+  { number: "05", title: "Finanzas & FP&A", text: "Convertir el plan en caja.", image: financeImage },
 ];
 
 export default function Home() {
@@ -51,6 +56,7 @@ export default function Home() {
             <i />
           </div>
           {valueStages.map((stage, index) => <div className="value-stage" key={stage.number}>
+            <div className="value-stage-image" style={{ backgroundImage: `url(${stage.image})` }} aria-hidden="true" />
             <div className="value-stage-topline">
               <span className="value-stage-number">{stage.number}</span>
               <span className="value-stage-index">PILAR {index + 1} / 05</span>
