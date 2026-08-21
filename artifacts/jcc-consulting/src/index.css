@@ -1046,6 +1046,60 @@ body { background: #f7f6f2; color: #171717; }
   .leadership-page .leader-image h2 { font-size: 3rem; }
 }
 
+/* The general manager is the leadership page focal point */
+.leadership-page .leader-profile {
+  width: 100%;
+  max-width: none;
+  padding: clamp(86px, 9vw, 140px) 8vw;
+  grid-template-columns: minmax(260px, 360px) minmax(0, 760px);
+  justify-content: center;
+  gap: clamp(48px, 8vw, 130px);
+  background: #15583f;
+  color: white;
+}
+.leadership-page .leader-mark {
+  width: 100%;
+  background: rgba(255,255,255,.09);
+  border: 1px solid rgba(255,255,255,.28);
+  color: white;
+  font-size: clamp(6rem, 10vw, 9rem);
+  box-shadow: inset 0 0 0 14px rgba(255,255,255,.035);
+}
+.leadership-page .leader-profile .eyebrow { color: #b9e0c7; }
+.leadership-page .leader-profile h2 {
+  margin: 16px 0 26px;
+  color: white;
+  font-size: clamp(3.2rem, 5.5vw, 5.8rem);
+  line-height: .92;
+}
+.leadership-page .leader-description {
+  max-width: 680px;
+  color: rgba(255,255,255,.82);
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+.leadership-page .leader-facts {
+  margin-top: 40px;
+  color: rgba(255,255,255,.9);
+  gap: 18px 30px;
+}
+.leadership-page .leader-facts svg { color: #b9e0c7; }
+
+@media (max-width: 760px) {
+  .leadership-page .leader-profile {
+    padding: 72px 24px 84px;
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+  .leadership-page .leader-mark {
+    width: min(210px, 58vw);
+    font-size: 6rem;
+  }
+  .leadership-page .leader-profile h2 { font-size: 3.5rem; }
+  .leadership-page .leader-description { font-size: 1rem; }
+  .leadership-page .leader-facts { display: grid; gap: 16px; }
+}
+
 /* Full-bleed imagery inside the solution modal */
 .solution-modal {
   display: block;
