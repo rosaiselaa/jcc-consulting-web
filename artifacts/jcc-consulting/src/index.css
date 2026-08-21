@@ -527,11 +527,11 @@ body { background: #f7f6f2; color: #171717; }
 .tool-card.is-active .tool-card-content { min-height: 190px; color: #171717; background: rgba(250,249,244,.95); }
 .tool-card.is-active .tool-card-content .tool-icon { background: #dceee6; }
 .tool-card.is-active .tool-description { margin: 12px 0 0; color: #5d655f; font-size: .82rem; line-height: 1.55; }
-.tool-card.is-active .tool-image { opacity: .52; transform: scale(1.03); filter: saturate(.72); }
-.tool-card.is-active .tool-image::after { background: rgba(209,238,222,.55); }
-.tool-card.is-active .tool-card-content { inset: 0; min-height: 0; align-items: center; justify-content: center; padding: 42px clamp(24px, 5vw, 64px); text-align: center; background: rgba(223,241,231,.78); color: #174e3b; }
-.tool-card.is-active .tool-card-content h3 { max-width: 460px; font-size: clamp(1.35rem, 2.2vw, 2rem); line-height: 1.12; }
-.tool-card.is-active .tool-description { max-width: 500px; margin-top: 18px; color: #426d5b; font-size: .95rem; line-height: 1.7; }
+.tool-card.is-active .tool-image { opacity: .68; transform: scale(1.03); filter: saturate(.78); }
+.tool-card.is-active .tool-image::after { background: rgba(8,18,16,.38); }
+.tool-card.is-active .tool-card-content { inset: 0; min-height: 0; align-items: center; justify-content: center; padding: 42px clamp(24px, 5vw, 64px); text-align: center; background: rgba(8,18,16,.38); color: white; }
+.tool-card.is-active .tool-card-content h3 { max-width: 460px; color: white; font-size: clamp(1.35rem, 2.2vw, 2rem); line-height: 1.12; }
+.tool-card.is-active .tool-description { max-width: 500px; margin-top: 18px; color: rgba(255,255,255,.88); font-size: .95rem; line-height: 1.7; }
 .tool-card p, .transformation-card p { color: #666159; }
 .transformation-section { background: #eeece6; color: #171717; }
 .transformation-section .premium-section-heading > p { color: #666159; }
