@@ -1029,18 +1029,20 @@ body { background: #f7f6f2; color: #171717; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgba(247,246,242,.5);
-  backdrop-filter: blur(8px);
+  background: rgba(247,246,242,.78);
+  backdrop-filter: blur(2px);
 }
 .solution-modal-copy .eyebrow,
 .solution-modal-copy h2,
 .solution-modal-copy p { position: relative; z-index: 1; }
-.solution-modal-copy h2 { color: #173b2d; }
+.solution-modal-copy .eyebrow { color: #15583f; }
+.solution-modal-copy h2 { color: #071d14; text-shadow: 0 1px 0 rgba(255,255,255,.45); }
 .solution-modal-copy .solution-modal-lead,
 .solution-modal-copy .solution-modal-detail { max-width: 680px; }
-.solution-modal-detail { color: #304b3d; }
-.solution-modal-image { opacity: .82; }
-.solution-modal::after { background: rgba(247,246,242,.12); }
+.solution-modal-lead { color: #102c20; font-weight: 600; }
+.solution-modal-detail { color: #263e32; }
+.solution-modal-image { opacity: .9; }
+.solution-modal::after { background: rgba(247,246,242,.06); }
 
 @media (max-width: 700px) {
   .solution-modal { min-height: 0; }
@@ -1050,7 +1052,8 @@ body { background: #f7f6f2; color: #171717; }
     min-height: 0;
     margin: 0;
     padding: 54px 26px 38px;
-    background: rgba(247,246,242,.58);
+    background: rgba(247,246,242,.84);
+    backdrop-filter: blur(2px);
   }
 }
 
