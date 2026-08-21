@@ -946,6 +946,24 @@ body { background: #f7f6f2; color: #171717; }
   .tech-panels article svg { margin-bottom: 38px; }
 }
 
+/* Floating technology panels */
+.tech-panels article {
+  border-radius: 4px;
+  box-shadow: 0 20px 45px rgba(23,59,45,.1), 0 3px 8px rgba(23,59,45,.05);
+  transition: transform .35s cubic-bezier(.22,.7,.25,1), box-shadow .35s ease;
+}
+.tech-panels article:first-child { transform: translateY(-7px); }
+.tech-panels article.orange-panel { transform: translateY(8px); }
+.tech-panels article:first-child:hover { transform: translateY(-15px); box-shadow: 0 27px 55px rgba(23,59,45,.15), 0 4px 10px rgba(23,59,45,.06); }
+.tech-panels article.orange-panel:hover { transform: translateY(0); box-shadow: 0 27px 55px rgba(23,59,45,.15), 0 4px 10px rgba(23,59,45,.06); }
+
+@media (max-width: 760px) {
+  .tech-panels article:first-child,
+  .tech-panels article.orange-panel { transform: none; }
+  .tech-panels article:first-child:hover,
+  .tech-panels article.orange-panel:hover { transform: translateY(-4px); }
+}
+
 @media (max-width: 760px) {
   .home-hero { min-height: 760px; display: flex; flex-direction: column; justify-content: center; }
   .home-hero .hero-image { position: absolute; inset: -2.5%; order: initial; width: auto; height: auto; background-position: center bottom; }
