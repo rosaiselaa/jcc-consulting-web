@@ -772,11 +772,11 @@ body { background: #f7f6f2; color: #171717; }
 .detail-points > div { padding: 19px 0; border-bottom: 1px solid #cfe2d7; color: #294d3d; }
 .detail-points > div:last-child { border-bottom: 0; padding-bottom: 3px; }
 .detail-points svg { color: #1f7654; }
-.detail-next { padding: 92px clamp(24px, 10vw, 180px); background: #173b2d; color: white; }
-.detail-next .eyebrow { color: #a9d9be; }
+.detail-next { padding: 92px clamp(24px, 10vw, 180px); background: #efe7d9; color: #173b2d; }
+.detail-next .eyebrow { color: #1f7654; }
 .detail-next h2 { max-width: 760px; font-size: clamp(2.3rem, 4.4vw, 5rem); }
-.detail-next-link { color: #d9f0e2; border-bottom: 1px solid #8bc3a5; padding-bottom: 8px; }
-.detail-next-link:hover { color: white; }
+.detail-next-link { color: #1f7654; border-bottom: 1px solid #7ba68e; padding-bottom: 8px; }
+.detail-next-link:hover { color: #15583f; }
 .detail-hero .eyebrow,
 .detail-body .eyebrow { animation: reveal-right .75s cubic-bezier(.22,.7,.25,1) both; }
 .detail-hero h1 { animation: reveal-left .9s cubic-bezier(.22,.7,.25,1) .12s both; }
