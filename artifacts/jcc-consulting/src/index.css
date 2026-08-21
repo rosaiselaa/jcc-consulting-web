@@ -195,6 +195,10 @@ body { background: #f7f6f2; color: #171717; }
 .menu-link:hover, .mobile-link:hover { background: #ebe8e1; color: #171717; }
 .mobile-link { font-size: 1.05rem; border-bottom: 1px solid #e1ded7; padding: 14px 0; }
 .site-navbar .group > div { top: 44px; border-color: #d8e6de; background: white; box-shadow: 0 18px 38px rgba(23,59,45,.14); }
+.site-navbar > .absolute {
+  pointer-events: auto;
+  z-index: 1;
+}
 @media (max-width: 760px) {
   .site-navbar { top: 0; }
   .site-navbar .nav-shell { border-radius: 0; border-right: 0; border-left: 0; box-shadow: 0 7px 24px rgba(23,59,45,.08); }
