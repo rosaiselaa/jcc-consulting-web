@@ -1151,6 +1151,79 @@ body { background: #f7f6f2; color: #171717; }
   .leadership-page .leader-facts { display: grid; gap: 16px; }
 }
 
+/* Unified field experience + general manager composition */
+.leadership-page .leadership-feature {
+  display: grid;
+  width: 100%;
+  grid-template-columns: minmax(0, 1.12fr) minmax(420px, .88fr);
+  align-items: stretch;
+  background: #f3f1ea;
+}
+.leadership-page .leadership-feature .leader-image {
+  width: auto;
+  min-height: 650px;
+  margin: 0;
+}
+.leadership-page .leadership-feature .leader-image > div {
+  max-width: 560px;
+  padding: 110px clamp(28px, 6vw, 92px);
+}
+.leadership-page .leadership-feature .leader-profile {
+  display: flex;
+  width: auto;
+  min-width: 0;
+  min-height: 650px;
+  padding: clamp(48px, 6vw, 88px) clamp(30px, 5vw, 74px);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 38px;
+}
+.leadership-page .leadership-feature .leader-profile::before,
+.leadership-page .leadership-feature .leader-profile::after { display: none; }
+.leadership-page .leadership-feature .leader-mark {
+  width: min(220px, 60%);
+  flex: 0 0 auto;
+}
+.leadership-page .leadership-feature .leader-profile > div:last-child {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.leadership-page .leadership-feature .leader-profile h2 {
+  font-size: clamp(2.8rem, 4.2vw, 4.8rem);
+}
+
+@media (max-width: 900px) {
+  .leadership-page .leadership-feature {
+    grid-template-columns: 1fr;
+  }
+  .leadership-page .leadership-feature .leader-image {
+    min-height: 500px;
+  }
+  .leadership-page .leadership-feature .leader-profile {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .leadership-page .leadership-feature .leader-image {
+    min-height: 430px;
+  }
+  .leadership-page .leadership-feature .leader-image > div {
+    padding: 78px 28px;
+  }
+  .leadership-page .leadership-feature .leader-profile {
+    padding: 60px 24px 72px;
+    gap: 42px;
+  }
+  .leadership-page .leadership-feature .leader-mark {
+    width: min(210px, 58vw);
+  }
+}
+
 /* Full-bleed imagery inside the solution modal */
 .solution-modal {
   display: block;
