@@ -570,8 +570,10 @@ body { background: #f7f6f2; color: #171717; }
 .eyebrow, .service-number, .service-arrow, .contact-details svg, .leader-facts svg { color: #1f7654; }
 .eyebrow.light, .home-hero .eyebrow.light { color: #2a956b; }
 .nav-link.active::after { background: #1f7654; }
-.nav-cta, .chat-toggle { background: #1f7654; }
-.nav-cta:hover, .chat-toggle:hover { background: #15583f; }
+.nav-cta { background: #1f7654; }
+.nav-cta:hover { background: #15583f; }
+.chat-toggle { min-width: 232px; justify-content: center; background: #dceee5; color: #173b2d; }
+.chat-toggle:hover, .chat-toggle.is-open { background: #c8e4d4; color: #173b2d; }
 .button-light, .button-dark { background: #1f7654; color: white; }
 .button-light:hover, .button-dark:hover { background: #15583f; }
 .text-link { border-color: #1f7654; }
@@ -697,6 +699,13 @@ body { background: #f7f6f2; color: #171717; }
 .chat-header button { color: #173b2d; }
 .chat-message.bot { background: #e1f1e8; color: #173b2d; }
 .chat-form input { color: #173b2d; }
+.chat-toggle {
+  min-height: 52px;
+  padding: 15px 22px;
+  font-size: .86rem;
+  letter-spacing: -.01em;
+}
+.chat-toggle svg { width: 22px; height: 22px; stroke-width: 2.2; }
 .tool-grid { display: flex; gap: 16px; overflow-x: auto; padding: 5px 2px 22px; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #1f7654 #e7eee9; }
 .tool-grid .tool-card { flex: 0 0 calc((100% - 32px) / 3); scroll-snap-align: start; }
 .tool-card-content .tool-icon img { width: 30px; height: 30px; object-fit: contain; }
