@@ -616,6 +616,13 @@ body { background: #f7f6f2; color: #171717; }
 @media (max-width: 760px) {
   .tool-grid { gap: 14px; padding-bottom: 18px; }
   .tool-grid .tool-card { flex-basis: 86%; }
+  .service-grid { grid-template-columns: 1fr; gap: 22px; padding-top: 65px; }
+  .services-grid-heading { margin-bottom: 8px; }
+  .services-grid-heading h2 { font-size: 2.45rem; }
+  .service-card-body { padding: 24px 22px 28px; }
+  .service-card h2 { min-height: auto; }
+  .service-card .service-intro { min-height: auto; }
+  .service-card ul { min-height: auto; }
 }
 
 @media (max-width: 760px) {
