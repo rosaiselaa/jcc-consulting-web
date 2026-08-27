@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { FadeIn } from "@/components/animations";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -15,7 +14,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, CheckCircle2 } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
 
 const formSchema = z.object({
   nombre: z.string().min(2, { message: "El nombre es requerido." }),
@@ -27,9 +25,6 @@ const formSchema = z.object({
 });
 
 export function ContactSection() {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -43,7 +38,6 @@ export function ContactSection() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsSubmitting(true);
     const whatsappMessage = [
       "Hola JCC Consulting, quiero solicitar información.",
       "",
@@ -55,13 +49,7 @@ export function ContactSection() {
       `Mensaje: ${values.mensaje}`,
     ].join("\n");
     const whatsappUrl = `https://wa.me/51984607523?text=${encodeURIComponent(whatsappMessage)}`;
-    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
-    toast({
-      title: "WhatsApp abierto",
-      description: "Revisa el mensaje y pulsa Enviar en WhatsApp.",
-    });
-    form.reset();
-    setIsSubmitting(false);
+    window.location.assign(whatsappUrl);
   }
 
   return (
@@ -216,15 +204,9 @@ export function ContactSection() {
                       )}
                     />
 
-                    <Button type="submit" size="lg" className="w-full text-base" disabled={isSubmitting}>
-                      {isSubmitting ? (
-                        "Enviando..."
-                      ) : (
-                        <>
-                          Enviar Mensaje
-                          <CheckCircle2 className="w-5 h-5 ml-2" />
-                        </>
-                      )}
+                    <Button type="submit" size="lg" className="w-full text-base">
+                      Continuar en WhatsApp
+                      <CheckCircle2 className="w-5 h-5 ml-2" />
                     </Button>
                   </form>
                 </Form>
