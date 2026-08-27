@@ -1460,6 +1460,21 @@ body { background: #f7f6f2; color: #171717; }
   .contact-section-premium {
     padding: 62px 18px 112px;
   }
+  .contact-section-premium > .container {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .contact-section-premium .grid {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .contact-section-premium .lg\:col-span-2,
+  .contact-section-premium .lg\:col-span-3 {
+    width: 100%;
+    min-width: 0;
+  }
   .contact-section-premium .lg\:col-span-2::after {
     right: 0;
     bottom: -42px;
@@ -1497,6 +1512,9 @@ body { background: #f7f6f2; color: #171717; }
     margin-top: 5px;
   }
   .contact-section-premium .lg\:col-span-3 > div {
+    width: min(100%, 390px);
+    margin-right: auto;
+    margin-left: auto;
     padding: 24px 16px 26px;
     border-radius: 20px;
   }
